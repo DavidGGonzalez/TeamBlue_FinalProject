@@ -1,2 +1,2 @@
-# TeamBlue_FinalProject
+# Team Blue Final Project
 University of Miami, Data Analytics Boot camp, Final Project
