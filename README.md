@@ -1,5 +1,5 @@
-# Team Blue Final Project
-University of Miami, Data Analytics Boot camp, Final Project
+# Team Blue 2022 Final Project
+University of Miami, __Data Analytics Boot camp__
 
 # Participants
 - Gajardoni, Ana
