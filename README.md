@@ -9,7 +9,6 @@ University of Miami, __Data Analytics Boot camp__
 # Initial Project File Structure
 ![Segment #1 - Project File Structure](/Images/ProjectFileStructure.png)
 
-
 # Topic
 SpeedDating
 
@@ -17,18 +16,18 @@ SpeedDating
 https://www.openml.org/  
 Data: speeddating.csv
 
-## Reason why we selected this topic: 
+### Reason why we selected this topic: 
 Fun topic and met requirements for machine learning project.
 
-## Question/Questions we hope to answer with this data: 
-Can a machine learning model help in predicting and improve speed dating process. 
+### Question/Questions we hope to answer with this data: 
+Can a machine learning model help in predicting and/or improving the speed dating process? 
 Output is Match or No Match based on input data from speed dating experiement.
 
-## Technologies: 
+### Technologies: 
 We will use several tools in this project to help with the application and data management.
-Python, SQL/Postgres, SKlearn, Pandas 
+Python, SQL/Postgres, SKlearn, Pandas, Heroku(to host database and website), Bootstrap, Flask, JavaScript, HTML, CSS   
 
-# Preliminary Preprocessing of Machine Learning Models:
+## Preliminary Preprocessing of Machine Learning Models:
 o	Data Preprocessing 
 * Load Data
   •Takes in data in from the  provisional database 
