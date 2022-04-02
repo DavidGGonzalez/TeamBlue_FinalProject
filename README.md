@@ -9,10 +9,18 @@ University of Miami, __Data Analytics Boot camp__
 # Initial Project File Structure
 ![Segment #1 - Project File Structure](/Images/ProjectFileStructure.png)
 
-# Topic
+
+
+## Overview 
+Given the task of collaborating with a team for a final project. The project should showcase the skills we have learned in this course. 
+We were asked to decide on a topic, create a repository, source a dataset, state the reason we selected our topic, provide questions we would like our analysis to answer and list the technologies we plan to use during this project lastly, provide mockups of a preliminary machine learning model and a provisional database.
+
+## Results
+
+### Topic
 SpeedDating
 
-## Source Data: 
+### Source Data: 
 https://www.openml.org/  
 Data: speeddating.csv
 
@@ -27,7 +35,7 @@ Output is Match or No Match based on input data from speed dating experiement.
 We will use several tools in this project to help with the application and data management.
 Python, SQL/Postgres, SKlearn, Pandas, Heroku(to host database and website), Bootstrap, Flask, JavaScript, HTML, CSS   
 
-## Preliminary Preprocessing of Machine Learning Models:
+# Preliminary Preprocessing of Machine Learning Models:
 o	Data Preprocessing 
 * Load Data
   •Takes in data in from the  provisional database 
@@ -59,7 +67,7 @@ o	Data Preprocessing
 * Evaluate the model using the test data. 
     * Use metrics such as accuracy, precision, recall, confusion matrix to show performance of our model. 
 
-## Provisional Database 
+# Provisional Database 
 
 *  Sample Data that mimics teh expected final database structure or schema
 *  Draft Machine Learning model is connected with the dashboard. 
