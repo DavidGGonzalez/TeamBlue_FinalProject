@@ -10,7 +10,6 @@ University of Miami, __Data Analytics Boot camp__
 ![Segment #1 - Project File Structure](/Images/ProjectFileStructure.png)
 
 
-
 ## Overview 
 Given the task of collaborating with a team for a final project. The project should showcase the skills we have learned in this course. 
 We were asked to decide on a topic, create a repository, source a dataset, state the reason we selected our topic, provide questions we would like our analysis to answer and list the technologies we plan to use during this project lastly, provide mockups of a preliminary machine learning model and a provisional database.
@@ -21,10 +20,12 @@ We were asked to decide on a topic, create a repository, source a dataset, state
 SpeedDating
 
 ### Source Data: 
+Source: [Columbia Business School](http://www.stat.columbia.edu/~gelman/arm/examples/speed.dating/) - 2004
+Please cite: None
 https://www.openml.org/  
 Data: speeddating.csv
-
-The dataset contains the data that was gathered from a speed dating experiment.  This experiment consisted of participants of the opposite sex engaging in a 4 minute conversation with the one another. Each participant then gave a ranking on their perception of the other person for several different categories. These rankings are what will determine if there is a match or not.
+Data Description: 
+The dataset contains data that was gathered from a speed dating experiments from 2002-2004.  This experiment consisted of participants of the opposite sex engaging in a 4 minute conversation with the one another. Each participant then gave a ranking on their perception of the other person for several attributes including attractiveness, sincerity, intelligence, fun, ambition, ands shared interests ,demographics, dating habits, self-perception across key attributes, beliefs on what others find valuable in a mate, and lifestyle information. Dataset contains 121 attributes. 
 
 ### Reason why we selected this topic: 
 Fun topic and met requirements for machine learning project.
@@ -42,14 +43,14 @@ o	Data Preprocessing
 * Load Data
   •Takes in data in from the  provisional database 
 * Clean the Data
-    *  Check datatypes and perform data encoding. 
+    * Check datatypes and perform data encoding. 
     * Check for Missing Data 
-    * Categorize or Grouping if needed
+    * Categorize or Grouping as needed
     * Scale the data
 
-    * Feature Selection: Decide which variables will be used for our model. We will need to     define our features/Independent Variables (X) and Dependent Variable (y) is defined. 
+    * Feature Selection: Decide which variables will be used for our model. We will need to define our features/Independent Variables (X) and Dependent Variable (y) is defined. 
     
-        * X: Features/Column Data 
+        * X: Features/Column Data
         * Y: Target Variable (“Match (1) or Not Matched(0)”) 
 
     * Data Splitting: Prepare our data by splitting it into Training data and Testing data.
