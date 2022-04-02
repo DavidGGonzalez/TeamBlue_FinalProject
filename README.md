@@ -49,12 +49,12 @@ o	Data Preprocessing
     * Test Data (20%):  This data is applied to the trained model to make predictions after the model is trained with the training data. 
 
 *  Design/Define the Model
-    * Supervised Learning Model. Classification Algorithm
-	<input which one we want to use>
-
+    * Supervised Learning Model : We are using this model for its ability to use labled datasets to train algorithms to classify data or predict outcomes. accurately.
+    	* Classification Algorithm: Logistic Regresstion
+    		
 * Train the model
     * Fit the model with training data
-    * Predict
+    * Predict 
 
 * Evaluate the model using the test data. 
     * Use metrics such as accuracy, precision, recall, confusion matrix to show performance of our model. 
