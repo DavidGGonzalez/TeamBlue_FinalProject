@@ -49,7 +49,7 @@ o	Data Preprocessing
     * Feature Selection: Decide which variables will be used for our model. We will need to     define our features/Independent Variables (X) and Dependent Variable (y) is defined. 
     
         * X: Features/Column Data 
-        * Y: Target Variable (“Match (1) or Not Matched(0)” 
+        * Y: Target Variable (“Match (1) or Not Matched(0)”) 
 
     * Data Splitting: Prepare our data by splitting it into Training data and Testing data.
 
@@ -67,3 +67,8 @@ o	Data Preprocessing
 
 * Evaluate the model using the test data. 
     * Use metrics such as accuracy, precision, recall, confusion matrix to show performance of our model. 
+
+## Provisional Database 
+
+*  Sample Data that mimics teh expected final database structure or schema
+*  Draft Machine Learning model is connected with the dashboard. 
