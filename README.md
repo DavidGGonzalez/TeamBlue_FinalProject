@@ -24,6 +24,8 @@ SpeedDating
 https://www.openml.org/  
 Data: speeddating.csv
 
+The dataset contains the data that was gathered from a speed dating experiment.  This experiment consisted of participants of the opposite sex engaging in a 4 minute conversation with the one another. Each participant then gave a ranking on their perception of the other person for several different categories. These rankings are what will determine if there is a match or not.
+
 ### Reason why we selected this topic: 
 Fun topic and met requirements for machine learning project.
 
