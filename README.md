@@ -1,5 +1,5 @@
-# Team Blue 2022 Final Project
-University of Miami, __Data Analytics Boot camp__
+# TeamBlue_FinalProject
+University of Miami, Data Analytics Boot camp, Final Project
 
 # Participants
 - Gajardoni, Ana
@@ -34,40 +34,44 @@ Fun topic and met requirements for machine learning project.
 Can a machine learning model help in predicting and/or improving the speed dating process? 
 Output is Match or No Match based on input data from speed dating experiement.
 
-### Technologies: 
-We will use several tools in this project to help with the application and data management.
-Python, SQL/Postgres, SKlearn, Pandas, Heroku(to host database and website), Bootstrap, Flask, JavaScript, HTML, CSS   
-
 # Preliminary Preprocessing of Machine Learning Models:
-o	Data Preprocessing 
-* Load Data
-  •Takes in data in from the  provisional database 
-* Clean the Data
-    * Check datatypes and perform data encoding. 
-    * Check for Missing Data 
-    * Categorize or Grouping as needed
-    * Scale the data
+## Technologies
+  * Data Cleaning and Analysis
+    Pandas and Python will also be used for exploratory analysis and cleaning the data. 
+  * Machine Learninge
+    SciKitLearn is the ML library is used to create a classifier. Our training and testing setup is performed with the splitter function train_test_split().
 
-    * Feature Selection: Decide which variables will be used for our model. We will need to define our features/Independent Variables (X) and Dependent Variable (y) is defined. 
+## Steps required for Machine Learning Model
+1.	Data Collection 
+    * Load Data
+      * Takes in data in from the  provisional database 
+
+2.  Data Preporcessing
+    * Data Cleaning
+      * Check for missing data or unwanted data 
+      * Categorize or Grouping as needed
+      * Scale the data or Sampling of data if necessary. 
+      * Data Encoding (transform all data to numerical data)
     
-        * X: Features/Column Data
+    * Feature Selection: Decide which variables will be used for our model. We will need to define our features/Independent Variables (X) and Dependent Variable (y) is       defined. 
+        * X: Features that will be used to predict the y variables. 
         * Y: Target Variable (“Match (1) or Not Matched(0)”) 
 
     * Data Splitting: Prepare our data by splitting it into Training data and Testing data.
+       * Train-Test-Split
+       * Train Data (80%): This data is used to build the model that predicts outcome. 
+       * Test Data (20%):  This data is applied to the trained model to make predictions after the model is trained with the training data. 
 
-* Train-Test-Split
-    * Train Data (80%): This data is used to build the model that predicts outcome. 
-    * Test Data (20%):  This data is applied to the trained model to make predictions after the model is trained with the training data. 
-
-*  Design/Define the Model
-    * Supervised Learning Model : We are using this model for its ability to use labled datasets to train algorithms to classify data or predict outcomes. accurately.
-    	* Classification Algorithm: Logistic Regresstion
+3.  Design/Define the Model
+    * Supervised Learning Model : We are using this model for its ability to use labled datasets to train algorithms to classify       data or predict outcomes.            accurately.
+   	* Classification Algorithm: Logistic Regresstion
     		
-* Train the model
-    * Fit the model with training data
-    * Predict 
+    * Train the model
+      * Fit the model with training data
+    
+    * Predict the outcome
 
-* Evaluate the model using the test data. 
+5.  Evaluate the model using the test data. 
     * Use metrics such as accuracy, precision, recall, confusion matrix to show performance of our model. 
 
 # Provisional Database 
