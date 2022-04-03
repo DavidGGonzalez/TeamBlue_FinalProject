@@ -1,9 +1,11 @@
 # TeamBlue_FinalProject
 University of Miami, Data Analytics Boot camp, Final Project
 
+# SEGMENT 1
+
 # Participants
 - Gajardoni, Ana
-- Thrasher, Kristi
+- Thraher, Kristi
 - Gonzalez, David
 
 # Initial Project File Structure
@@ -21,7 +23,6 @@ SpeedDating
 
 ### Source Data: 
 Source: [Columbia Business School](http://www.stat.columbia.edu/~gelman/arm/examples/speed.dating/) - 2004
-https://www.openml.org/  
 Data: speeddating.csv
 
 Data Description: 
@@ -33,6 +34,14 @@ Fun topic and met requirements for machine learning project.
 ### Question/Questions we hope to answer with this data: 
 Can a machine learning model help in predicting and/or improving the speed dating process? 
 Output is Match or No Match based on input data from speed dating experiement.
+
+### Team Communication and Collaboration:
+Team communicated through Slack and Zoom for scheduled meetings.  
+Github is used for the project location along with source files. 
+Individual Branches for each teammember were created 
+
+![Github branches](https://user-images.githubusercontent.com/94208810/161448764-9794fd20-a8f3-4a3d-a0b8-17d150962bf2.png)
+
 
 # Preliminary Preprocessing of Machine Learning Models:
 ## Technologies
@@ -71,10 +80,12 @@ Output is Match or No Match based on input data from speed dating experiement.
     
     * Predict the outcome
 
-5.  Evaluate the model using the test data. 
+4.  Evaluate the model using the test data. 
     * Use metrics such as accuracy, precision, recall, confusion matrix to show performance of our model. 
 
 # Provisional Database 
 
 *  Sample Data that mimics teh expected final database structure or schema
 *  Draft Machine Learning model is connected with the dashboard. 
+
+# Dashboard 
