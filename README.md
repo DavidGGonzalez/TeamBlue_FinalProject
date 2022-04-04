@@ -1,6 +1,6 @@
 
-# TeamBlue_FinalProject
-University of Miami, Data Analytics Boot camp, Final Project
+# Team Blue, Final Project 2022
+University of Miami, *Data Analytics Boot camp*, Final Project
 
 ## SEGMENT 1
 
@@ -45,7 +45,7 @@ Team communicated through Slack and Zoom for scheduled meetings.
 Github is used for the project location along with source files. 
 
 ## GitHub
-See repository:https://github.com/DavidGGonzalez/TeamBlue_FinalProject
+See repository: https://github.com/DavidGGonzalez/TeamBlue_FinalProject
 
 GitHub contains the following requirements for segment 1:
 * Main Branch
@@ -53,8 +53,7 @@ GitHub contains the following requirements for segment 1:
 * Individual Branches
 Individual Branches for each teammember were created 
 
-![Github branches](https://user-images.githubusercontent.com/94208810/161448764-9794fd20-a8f3-4a3d-a0b8-17d150962bf2.png)
-
+![Github branches](./Images/Github%20branches.png)
 
 
 ### Technologies:
@@ -62,10 +61,12 @@ Individual Branches for each teammember were created
   * Visual Code
   * Jupyter Notebook
   * Flask (Web framework)
+
 * Data Management
   * Excel
   * Pandas’ DataFrame
   * PostgreSQL
+
 * Developmen*t Languages, formatting, web visualization
   * Python
   * JavaScript
@@ -73,8 +74,10 @@ Individual Branches for each teammember were created
   * CSS
   *	Bootstrap
   *	D3
-*	Data Visualization
-  *	Tableau
+
+* Data Visualization
+  * Tableau
+
 * Deployment environment
   *	Heroku
 
@@ -85,8 +88,11 @@ Individual Branches for each teammember were created
     * Load Data
       * Takes in data in from the provisional database 
 
-The following is image showing the input data and returning labels. 
-![image](https://user-images.githubusercontent.com/94208810/161598248-3afbb74c-db7b-48f6-924a-1e36b9a1b247.png)
+The following is image showing the input data and returning labels.
+
+![Preliminary DataFrame](./Images/PreliminaryDataFrame.png)
+
+
 
 Note: Data Labels: Subject to change as data gets cleaned and better classified: age, education level, income, race, religion, date frequency, survey answers.
 
@@ -144,35 +150,41 @@ SURVEY_QUESTION.
 A initial ERD proposal is shown below – this might change slightly according to the 
 data we find in the dataset.
 
- *ERD: 
+ __*ERD*__
 
-![Skecht_ERD](https://user-images.githubusercontent.com/94208810/161607426-f8301e3c-40c4-4d2b-a2dd-6576d7878725.png)
+![ERD](./Images/Skecht_ERD.png)
 
 
 Main tables’ samples roughly obtained from the original CSV are also displayed 
 below. The data might change slightly (addition/removal of fields), but the whole 
 idea of how the data is stored should be the same.
 
- *Person Data: 
+__*Person Data*__
 
-![Sample_Person_Data](https://user-images.githubusercontent.com/94208810/161607263-3d4a3060-127c-4079-b8e2-4259a92dd4c1.png)
+![Sample_Person_Data](./Images/Sample_Person_Data.png)
 
- *Sample SD WAVE Person: 
 
-![Sample_SD_Wave_Person](https://user-images.githubusercontent.com/94208810/161607222-ff6222b0-644c-44b6-b2e8-edf5ff8a7ffc.png)
+__*Sample SD WAVE Person*__
 
- *Sample SD Wave Pair: 
- 
-![Sample_SD_Wave_Pair](https://user-images.githubusercontent.com/94208810/161607160-69ea016c-3457-46fb-8797-8ef2afcdfff8.png)
+![Sample_SD_Wave_Person](./Images/Sample_SD_Wave_Person.png)
 
- *Sample Preference Perception:
- 
-![Sample_Preference_Perception](https://user-images.githubusercontent.com/94208810/161607090-31d71c96-deec-4f69-b3e5-a81a5b4887fa.png)
+
+__*Sample SD Wave Pair*__
+
+![Sample_SD_Wave_Pair](./Images/Sample_SD_Wave_Pair.png)
+
+
+__*Sample Preference Perception*__
+
+![Sample_Preference_Perception](./Images/Sample_Preference_Perception.png)
+
+
 
 
 ## Dashboard 
 
 Tools: TBD as we progress with project
+
 Model Deployment
 
 
