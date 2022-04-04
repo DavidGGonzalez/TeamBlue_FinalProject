@@ -80,6 +80,11 @@ Individual Branches for each teammember were created
     * Load Data
       * Takes in data in from the provisional database 
 
+The following is image showing the input data and returning labels. 
+![image](https://user-images.githubusercontent.com/94208810/161598248-3afbb74c-db7b-48f6-924a-1e36b9a1b247.png)
+
+Note: Data Labels: Subject to change as data gets cleaned and better classified: age, education level, income, race, religion, date frequency, survey answers.
+
 2.  Data Preporcessing
     * Data Cleaning
       * Check for missing data or unwanted data 
@@ -109,17 +114,11 @@ Individual Branches for each teammember were created
 4.  Evaluate the model using the test data. 
     * Use metrics such as accuracy, precision, recall, confusion matrix to show performance of our model. 
 
-The following is imge showing the input data and returning labels. 
-![image](https://user-images.githubusercontent.com/94208810/161598248-3afbb74c-db7b-48f6-924a-1e36b9a1b247.png)
-
-Note: Data Labels: Subject to change as data gets cleaned and better classified: age, education level, income, race, religion, date frequency, survey answers.
-
 
 
 ## Provisional Database 
 
 Database mapping (from original CSV dataset):
-Overview of the how the data is gathered we must take into account the folowing process...
 To start, each “contender” is asked to fill a background questionnaire 
 regarding various points such as age, race, interests and how important he rates a 
 few matters such as same religion or same race – the list long but simple. After 
@@ -140,18 +139,24 @@ SURVEY_QUESTION.
 A initial ERD proposal is shown below – this might change slightly according to the 
 data we find in the dataset.
 
+![Skecht_ERD](https://user-images.githubusercontent.com/94208810/161607426-f8301e3c-40c4-4d2b-a2dd-6576d7878725.png)
+
 
 Main tables’ samples roughly obtained from the original CSV are also displayed 
 below. The data might change slightly (addition/removal of fields), but the whole 
 idea of how the data is stored should be the same.
 
-[Sample_Person_Data]
+![Sample_Person_Data](https://user-images.githubusercontent.com/94208810/161607263-3d4a3060-127c-4079-b8e2-4259a92dd4c1.png)
 
-[Sample_SD_Wave_Person]
 
-[Sample_SD_Wave_Pair]
+![Sample_SD_Wave_Person](https://user-images.githubusercontent.com/94208810/161607222-ff6222b0-644c-44b6-b2e8-edf5ff8a7ffc.png)
 
-[Sample_Preference_Percepti
+
+![Sample_SD_Wave_Pair](https://user-images.githubusercontent.com/94208810/161607160-69ea016c-3457-46fb-8797-8ef2afcdfff8.png)
+
+
+![Sample_Preference_Perception](https://user-images.githubusercontent.com/94208810/161607090-31d71c96-deec-4f69-b3e5-a81a5b4887fa.png)
+
 
 ## Dashboard 
 
