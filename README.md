@@ -118,8 +118,40 @@ Note: Data Labels: Subject to change as data gets cleaned and better classified:
 
 ## Provisional Database 
 
-*  Sample Data that mimics the expected final database structure or schema
-*  Draft Machine Learning model is connected with the dashboard. 
+Database mapping (from original CSV dataset):
+Overview of the how the data is gathered we must take into account the folowing process...
+To start, each “contender” is asked to fill a background questionnaire 
+regarding various points such as age, race, interests and how important he rates a 
+few matters such as same religion or same race – the list long but simple. After 
+each date, the participant is asked to rate the partner’s attributes culminating in 
+one variable: whether the participant wants (or not) to have a date with the partner.
+This is mapped in the Database in entities: PERSON, SD_WAVE, SD_WAVE_PERSON, 
+SD_WAVE_PAIR.
+
+Throughout the event and up to 3-4 weeks later, the participant is asked to continue
+answering generic questions (always rating the same attributes listed above). Many 
+of the questions proposed repeat a few times and seem more related to behavior 
+than necessarily to the choices and decisions during the event. That is very 
+interesting data though – especially if the answer for the same question can be 
+mapped over time showing the progress. Such questions and their answers are 
+mapped in the following Database entities: PREFERENCE_PERCEPTION and 
+
+SURVEY_QUESTION.
+A initial ERD proposal is shown below – this might change slightly according to the 
+data we find in the dataset.
+
+
+Main tables’ samples roughly obtained from the original CSV are also displayed 
+below. The data might change slightly (addition/removal of fields), but the whole 
+idea of how the data is stored should be the same.
+
+[Sample_Person_Data]
+
+[Sample_SD_Wave_Person]
+
+[Sample_SD_Wave_Pair]
+
+[Sample_Preference_Percepti
 
 ## Dashboard 
 
