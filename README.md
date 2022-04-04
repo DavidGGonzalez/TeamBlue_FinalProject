@@ -85,7 +85,7 @@ Individual Branches for each teammember were created
 
 # Provisional Database 
 
-*  Sample Data that mimics teh expected final database structure or schema
+*  Sample Data that mimics the expected final database structure or schema
 *  Draft Machine Learning model is connected with the dashboard. 
 
 # Dashboard 
