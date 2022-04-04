@@ -14,7 +14,7 @@ University of Miami, Data Analytics Boot camp, Final Project
 
 ## Overview 
 Given the task of collaborating with a team for a final project. The project should showcase the skills we have learned in this course. 
-We were asked to decide on a topic, create a repository, source a dataset, state the reason we selected our topic, provide questions we would like our analysis to answer and list the technologies we plan to use during this project lastly, provide mockups of a preliminary machine learning model and a provisional database.
+We were asked to decide on a topic, create a repository, source a dataset, state the reason we selected our topic, provide questions we would like our analysis to answer and list the technologies we plan to use during this project lastly, provide mockups of a preliminary machine learning model and a provisional database. Assigned roles to team members. 
 
 ## Results
 
@@ -35,6 +35,11 @@ Fun topic and met requirements for machine learning project.
 Can a machine learning model help in predicting and/or improving the speed dating process? 
 Output is Match or No Match based on input data from speed dating experiement.
 
+## Team Roles
+- Gajardoni, Ana: Circle Role: Created mockup Database including the ERD and explanation of how it is integrated into database. 
+- Thraher, Kristi: Triangle Role: Mockup of Machine Learning Model, including which model we choose and why along with the ReadMe file.  
+- Gonzalez, David: Square Role/Triangle: Set up of Repository and Branches, Read in data and created output labels.
+
 ### Team Communication and Collaboration:
 Team communicated through Slack and Zoom for scheduled meetings.  
 Github is used for the project location along with source files. 
@@ -47,13 +52,14 @@ Individual Branches for each teammember were created
 ## Technologies
   * Data Cleaning and Analysis
     Pandas and Python will also be used for exploratory analysis and cleaning the data. 
-  * Machine Learninge
+  * Machine Learning
     SciKitLearn is the ML library is used to create a classifier. Our training and testing setup is performed with the splitter function train_test_split().
-
+  * Database
+  SQL, QuickDatabaseDiagrams
 ## Steps required for Machine Learning Model
 1.	Data Collection 
     * Load Data
-      * Takes in data in from the  provisional database 
+      * Takes in data in from the provisional database 
 
 2.  Data Preporcessing
     * Data Cleaning
@@ -72,8 +78,9 @@ Individual Branches for each teammember were created
        * Test Data (20%):  This data is applied to the trained model to make predictions after the model is trained with the training data. 
 
 3.  Design/Define the Model
-    * Supervised Learning Model : We are using this model for its ability to use labled datasets to train algorithms to classify       data or predict outcomes.            accurately.
-   	* Classification Algorithm: Logistic Regresstion
+    * Supervised Learning Model : We are using this model for its ability to use labled datasets to train algorithms to classify  data or predict outcomes.  
+         
+   	* Classification Algorithm: Logistic Regresstion is chosen to predict a dependent categorical target variable in our case match or no match. 
     		
     * Train the model
       * Fit the model with training data
@@ -83,9 +90,22 @@ Individual Branches for each teammember were created
 4.  Evaluate the model using the test data. 
     * Use metrics such as accuracy, precision, recall, confusion matrix to show performance of our model. 
 
+The following is imge showing the input data returning label. 
+ 
+
+
 # Provisional Database 
 
 *  Sample Data that mimics the expected final database structure or schema
 *  Draft Machine Learning model is connected with the dashboard. 
 
 # Dashboard 
+
+Tools: TBD as we progress with project
+Model Deployment
+
+# Summary
+
+Limitations
+
+Future Analaysis 
