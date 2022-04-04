@@ -139,6 +139,8 @@ SURVEY_QUESTION.
 A initial ERD proposal is shown below – this might change slightly according to the 
 data we find in the dataset.
 
+ *ERD: 
+
 ![Skecht_ERD](https://user-images.githubusercontent.com/94208810/161607426-f8301e3c-40c4-4d2b-a2dd-6576d7878725.png)
 
 
@@ -146,15 +148,20 @@ Main tables’ samples roughly obtained from the original CSV are also displayed
 below. The data might change slightly (addition/removal of fields), but the whole 
 idea of how the data is stored should be the same.
 
+ *Person Data: 
+
 ![Sample_Person_Data](https://user-images.githubusercontent.com/94208810/161607263-3d4a3060-127c-4079-b8e2-4259a92dd4c1.png)
 
+ *Sample SD WAVE Person: 
 
 ![Sample_SD_Wave_Person](https://user-images.githubusercontent.com/94208810/161607222-ff6222b0-644c-44b6-b2e8-edf5ff8a7ffc.png)
 
-
+ *Sample SD Wave Pair: 
+ 
 ![Sample_SD_Wave_Pair](https://user-images.githubusercontent.com/94208810/161607160-69ea016c-3457-46fb-8797-8ef2afcdfff8.png)
 
-
+ *Sample Preference Perception:
+ 
 ![Sample_Preference_Perception](https://user-images.githubusercontent.com/94208810/161607090-31d71c96-deec-4f69-b3e5-a81a5b4887fa.png)
 
 
