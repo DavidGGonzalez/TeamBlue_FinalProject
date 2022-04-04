@@ -1,3 +1,4 @@
+
 # TeamBlue_FinalProject
 University of Miami, Data Analytics Boot camp, Final Project
 
@@ -109,7 +110,7 @@ Individual Branches for each teammember were created
     * Use metrics such as accuracy, precision, recall, confusion matrix to show performance of our model. 
 
 The following is imge showing the input data and returning labels. 
-
+![image](https://user-images.githubusercontent.com/94208810/161598248-3afbb74c-db7b-48f6-924a-1e36b9a1b247.png)
 
 Note: Data Labels: Subject to change as data gets cleaned and better classified: age, education level, income, race, religion, date frequency, survey answers.
 
