@@ -47,9 +47,14 @@ Github is used for the project location along with source files.
 ## GitHub
 See repository:https://github.com/DavidGGonzalez/TeamBlue_FinalProject
 
+GitHub contains the following requirements for segment 1:
+* Main Branch
+* ReadME file
+* Individual Branches
 Individual Branches for each teammember were created 
 
 ![Github branches](https://user-images.githubusercontent.com/94208810/161448764-9794fd20-a8f3-4a3d-a0b8-17d150962bf2.png)
+
 
 
 ### Technologies:
