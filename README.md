@@ -2,11 +2,15 @@
 # Team Blue, Final Project 2022
 University of Miami, *Data Analytics Boot camp*, Final Project
 
+# Google Slides Presentation
+https://docs.google.com/presentation/d/e/2PACX-1vQrDJtNu8tUs8CXo1efHpvvtLu_8gVtY2kp-86YUJkOw_ofrlde-w-k8xCqwpE1SxQlDK_w8nynwsA2/pub?start=false&loop=false&delayms=15000
+
+
 ## SEGMENT 1
 
 ### Participants
 - Gajardoni, Ana
-- Thraher, Kristi
+- Thrasher, Kristi
 - Gonzalez, David
 
 ### Initial Project File Structure
@@ -33,7 +37,7 @@ Fun topic and met requirements for machine learning project.
 * Question/Questions we hope to answer with this data: 
 
   * Can a machine learning model help in predicting and/or improving the speed dating process? 
-  * Output is Match or No Match based on input data from speed dating experiement.
+  * Output is Match or No Match based on input data from speed dating experiment.
 
 ### Team Roles
 - Gajardoni, Ana: Circle Role: Created mockup Database including the ERD and explanation of how it is integrated into database. 
