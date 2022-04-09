@@ -7,10 +7,10 @@ CREATE TABLE "person" (
     "person_id" int   NOT NULL,
     "wave_id" int   NOT NULL,
     "wave_person_id" int   NOT NULL,
-    "gender" bool   NOT NULL,
+    "gender" int   NOT NULL,
     "age" int   NOT NULL,
     "race" int   NOT NULL,
-    "field" char(50)   NOT NULL,
+    "field" char(100)   NOT NULL,
     "importance_race" int   NOT NULL,
     "importance_religion" int   NOT NULL,
     "goal" int   NOT NULL,
@@ -51,13 +51,13 @@ CREATE TABLE "sd_wave_pair" (
     "person_id" int   NOT NULL,
     "partner_id" int   NOT NULL,
     "score_attractive" int   NOT NULL,
-    "score_since" int   NOT NULL,
+    "score_sincere" int   NOT NULL,
     "score_intelligent" int   NOT NULL,
     "score_fun" int   NOT NULL,
     "score_ambitious" int   NOT NULL,
     "score_shared_interests" int   NOT NULL,
-    "decision" bool   NOT NULL,
-    "match" bool   NOT NULL,
+    "decision" int   NOT NULL,
+    "match" int   NOT NULL,
     CONSTRAINT "pk_sd_wave_pair" PRIMARY KEY (
         "wave_id","person_id","partner_id"
      )
@@ -68,8 +68,8 @@ CREATE TABLE "preference_perception" (
     "person_id" int   NOT NULL,
     "survey_phase" int   NOT NULL,
     "question_id" int   NOT NULL,
-    "self" bool   NOT NULL,
-    "attractve" int   NOT NULL,
+    "self" int   NOT NULL,
+    "attractive" int   NOT NULL,
     "sincere" int   NOT NULL,
     "intelligent" int   NOT NULL,
     "fun" int   NOT NULL,
@@ -82,7 +82,10 @@ CREATE TABLE "preference_perception" (
 
 CREATE TABLE "survey_question" (
     "question_id" int   NOT NULL,
-    "question" char(200)   NOT NULL
+    "question" char(200)   NOT NULL,
+    CONSTRAINT "pk_survey_question" PRIMARY KEY (
+        "question_id"
+     )
 );
 
 ALTER TABLE "person" ADD CONSTRAINT "fk_person_wave_id" FOREIGN KEY("wave_id")
