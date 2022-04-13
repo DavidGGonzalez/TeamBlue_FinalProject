@@ -128,26 +128,26 @@ We decided we did not need all of this information so decided to simplify our da
 ![match distribution](https://user-images.githubusercontent.com/94208810/163216021-88e20bfa-c51b-4fd0-8ee8-c4d936e151a9.png)
 
 
-* Data Cleaning
-    * Check for null values 
+#### Data Cleaning
+* Check for null values 
  
 ![CheckNullVlaues](https://user-images.githubusercontent.com/94208810/163200458-5c2dbe6f-568d-46a5-ba7e-9c853f438e77.png)
-
 
 We saw several had missing values but we see the income attribute has 4099 missing datapoints, which is half of the entire data so will drop the income column. By dropping this column it won't affect the dataset's integrity. We also see that there are several missing values from all columns but gender, and match so we may have to some imputation or drop null columns depending on percentage of missing values and how it would affect our data. We saw several missing values did exist so we will handle those by removing them completly if it has more than 50-75% of missing values. This method is advised only when there are enough samples in the data set. Lets first view to see if less than .50
 
 ![NanValuesBasedOnDataMissing](https://user-images.githubusercontent.com/94208810/163211164-ad55e3c4-de6f-43e7-af8d-8ff6a420a89c.png)
 
-    * Check for datatypes: All datatypes are numberical so no coversion needed to be done
-    * Check Correlation of features: Pandas' DataFrame corr () Method Correlation to measure the strength of the linear relationship between two variables.This method computes the pairwise correlation of columns, excluding NA/null values. 
+We dropped all null values because it was way less than 50% of our dataset.
+
+* Check for datatypes: All datatypes are numberical so no coversion needed to be done
+
+* Check Correlation of features: Pandas' DataFrame corr () Method Correlation to measure the strength of the linear relationship between two variables.This method computes the pairwise correlation of columns, excluding NA/null values. 
 
 ![CorrMatrix](https://user-images.githubusercontent.com/94208810/163203265-10bb65c3-0784-4c54-8490-2724597a3f0e.png)
    
 The correlation coefficients along the diagonal of the table are all equal to 1 because each variable is perfectly correlated with itself. The others are close but not past .75. We also see that match has high correlation to fun, fun_o, attr, attr_0 and like, like_0.  We also see that field_cd, race, age don't have much if any correlation to the other attributes and gender has some with attritiveness, overall like and match of course.  
 
- ![NanValuesBasedOnDataMissing](https://user-images.githubusercontent.com/94208810/163211454-3c8508d7-1b74-4685-a6cf-891eb54d8378.png)
  
- We dropped all null values because it was way less than 50% of our dataset. 
  
   *  Check for datatypes:After checking datatypes we saw this to be unnecessary because they were all numerical, no scaling, imputation 						or encoding needed. 
 				
@@ -165,7 +165,7 @@ We saw that no scaling or encoding needed and dataset dropped to 5905, 19.
        * Train Data (80%): This data is used to build the model that predicts outcome. 
        * Test Data (20%):  This data is applied to the trained model to make predictions after the model is trained with the training data. 
 
-4.  Modelling/Design/Define the Model: Once the Data is defined, and it is split into training and testing data. It is time to design the model. We chose a Supervised Learning Model because our data is labeled data and are using this model for its ability to use labled datasets to train algorithms to classify  data or predict outcomes.  We also know we will use a Classification Model because we know Classification models belong to the class of conditional models, that is, probabilistic models that specify the conditional probability distributions of the output data given the input data.
+4.  Modeling/Design/Define the Model: Once the Data is defined, and it is split into training and testing data. It is time to design the model. We chose a Supervised Learning Model because our data is labeled data and are using this model for its ability to use labled datasets to train algorithms to classify  data or predict outcomes.  We also know we will use a Classification Model because we know Classification models belong to the class of conditional models, that is, probabilistic models that specify the conditional probability distributions of the output data given the input data.
 We chose to use two different classification algorithms to decide which one performs best then we will determine  which model had better performance. We will start with a Logistic Regression model, then try the ensemble classifier Balanced Random Forest. 
 
 Set up our model by importing and defining which algorithm we will be using.
@@ -180,17 +180,22 @@ We can visualize the data split by importing a counter function. Below is a pict
 * Train the model
 * Fit the model with training data
 
- 
 ##### Ensemble Classiier Balanced Random Forest: we used Ensemble Classifier to predict if match or not because it creates a machine learning model that is capable of performing better than individually by using multiple models together. THis will help improve the accuracy and robustness as well as decrecrease the variance of the model and increase the overall perfomance of the model. For Balanced Random Forest we imported BalancedRandomForestClassifier form imblearn.ensemble. 
-    		
-      * Train the model
-      * Fit the model with training data
-      * Predict the outcome with different metrics such as accuracy score, precision and f1 score.
+
+* Train the model
+* Fit the model with training data
 
 5.  Evaluate the model using the test data. 
     * Use metrics such as accuracy, precision, recall, confusion matrix to show performance of our model. 
-    * Predict the outcome with different metrics such as accuracy score, precision and f1 score
+    * Predict the outcome with different metrics such as accuracy score(a measurement of how closely you predicted the right outcome), precision( represents the ratio of true positive to the sum of true positive and false positive.) and f1 score(F1-score, is a measure of a model’s accuracy on a dataset.)
+    
+##### Evaluate the Logistic Regression Model
+* We see from accuracy score we had 0.6431587123608596 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.    
 
+##### Evaluate the BalancedRandomForest Model
+* We see from accuracy score we had 0.7650979384995082 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.
+
+### Balanced Random Forest classifier showed imporvement from Logistic Regression with an accuracy score of 0.7650979384995082
 
 
 ## Provisional Database 
