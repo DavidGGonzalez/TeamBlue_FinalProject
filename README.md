@@ -162,30 +162,36 @@ We saw that no scaling or encoding needed and dataset shape dropped to 5905, 19.
     
     * Data Splitting: we will use the Scikit-Learn's train_test_split function. Note: A problem that can occur if data isn't split correctly is underfitting and overfitting of your model. 
        * Train Data (80%): This data is used to build the model that predicts outcome. 
-       * Test Data (20%):  This data is applied to the trained model to make predictions after the model is trained with the training data. 
+       * Test Data (20%):  This data is applied to the trained model to make predictions after the model is trained with the training data. This is how we make the algorithm learn the relationship between our predictors(x) and outcome(y) so that it can make a prediction in the future on new data. 
 
 ![Train_test_split](https://user-images.githubusercontent.com/94208810/163235425-41bbbcc2-a33d-4f92-85ec-7a21efd47348.png)
 
 4.  Modeling/Design/Define the Model: Once the Data is defined, and it is split into training and testing data. It is time to design the model. We chose a Supervised Learning Model because our data is labeled data and are using this model for its ability to use labled datasets to train algorithms to classify  data or predict outcomes.  We also know we will use a Classification Model because we know Classification models belong to the class of conditional models, that is, probabilistic models that specify the conditional probability distributions of the output data given the input data.
 We chose to use two different classification algorithms to decide which one performs best then we will determine  which model had better performance. We will start with a Logistic Regression model, then try the ensemble classifier Balanced Random Forest. 
 
-Set up our model by importing and defining which algorithm we will be using.
-* Train the model: trained the model on training set of data. 
-* Fit the model with testing data.
+-	Set up our model by importing and defining which algorithm we will be using.
+	* Train the model: trained the model on training set of data. 
+	* Fit the model with testing data.
 
-We can visualize the data split by importing a counter function. Below is a picture of our training and testing sets. 
+#### Logistic Regresstion: this algorithm  was chosen because the dependent variable is known to be simple and straight forward.  It is a predictive analysis used to describe the data and explain the realationship of the one dependent variable and  independent variables. It does have both benefits and limitations here are the following:
+-	Benefits: Simple and easy to implement with effective results in some cases. 
+-	Limitations to this algorithm is in those cases where the data isn't so straightforward and because it is a statistical evaluation model the attempts to predict an exact probabilistic outcomes based on independent features it may not measure up. Will there be a match or not based on the independent variables(X). That is the question. Not sure until you train and test it and compare to other models. 
+	
+-	Train the model
+	For Logistic Regression we import LogisticRegression from the sklearn.linear model library and set up our model with the training data. 
+-	Fit the model with training data
+	
 
-
-	##### Logistic Regresstion: is chosen to predict a dependent categorical target variable in our case match or no match. Algorithm  was chosen because the dependent variable is  (binary), 0,1.  It is a predictive analysis and used to describe data and explain the realationship of the one dependent variable and one or more independent variables. Will there be a match or not based on the independent variables.  For Logistic Regression we import LogisticRegression from the sklearn.linear model library and set up our model with the training data. 
-
-	* Train the model
-	* Fit the model with training data
-
-	##### Ensemble Classiier Balanced Random Forest: we used Ensemble Classifier to predict if match or not because it creates a machine learning model that is capable of performing better than individually by using multiple models together. THis will help improve the accuracy and robustness as well as decrecrease the variance of the model and increase the overall perfomance of the model. For Balanced Random Forest we imported BalancedRandomForestClassifier form imblearn.ensemble. 
-
-	* Train the model
-	* Fit the model with training data
-
+##### Ensemble Classiier Balanced Random Forest: we used Ensemble Classifier because it can be used to solve for regression or classification problems and it is known to creates a machine learning model that is capable of performing better than individually by using multiple models together. This will help improve the accuracy and robustness as well as decrecrease the variance of the model and increase the overall perfomance of the model. For  In our case it is a classification problem. Will there be a match or not. Some more benefits and limitations to this algorithm is listed as the following: 
+	
+-	Benefits: Works well with non-linear data. It is known to have better accuracy than other algorithms. It is flexable like logistic regression and can work on both regression and classification problems. It also makes it easy to view the importance of the input features. I have included a picture of that. 
+	
+-	Limitations: It can be slower to run and test and make it real time testing ineffective. 
+-	Train the model
+	Balanced Random Forest we imported BalancedRandomForestClassifier form imblearn.ensemble.
+-	Fit the model with training data
+	
+	
 5.  Evaluate the model using the test data. 
     * Use metrics such as accuracy, precision, recall, confusion matrix to show performance of our model. 
     * Predict the outcome with different metrics such as accuracy score(a measurement of how closely you predicted the right outcome), precision( represents the ratio of true positive to the sum of true positive and false positive.) and f1 score(F1-score, is a measure of a model’s accuracy on a dataset.)
