@@ -200,15 +200,18 @@ We chose to use two different classification algorithms to decide which one perf
     * Predict the outcome with different metrics such as accuracy score(a measurement of how closely you predicted the right outcome), precision( represents the ratio of true positive to the sum of true positive and false positive.) and f1 score(F1-score, is a measure of a model’s accuracy on a dataset.)
     
 	##### Evaluate the Logistic Regression Model
+	
+	![LogRegTTE](https://user-images.githubusercontent.com/94208810/163267393-88bad6e7-05fd-4140-acbe-d028d1730ecd.png)
+	
 	* We see from accuracy score we had 0.6431587123608596 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.    
 	
 
 
 	##### Evaluate the BalancedRandomForest Model
+	
+	![RandomForestTTE](https://user-images.githubusercontent.com/94208810/163267435-ab4d8d73-748d-4f1b-86e0-5a3424be991f.png)
+	
 	* We see from accuracy score we had 0.7650979384995082 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.
-
-
-
 
 	#### Balanced Random Forest classifier showed improvement from Logistic Regression with an accuracy score of 0.7650979384995082
 
