@@ -148,24 +148,23 @@ We dropped all null values because it was way less than 50% of our dataset.
 ![CorrMatrix](https://user-images.githubusercontent.com/94208810/163203265-10bb65c3-0784-4c54-8490-2724597a3f0e.png)
    
 The correlation coefficients along the diagonal of the table are all equal to 1 because each variable is perfectly correlated with itself. The others are close but not past .75. We also see that match has high correlation to fun, fun_o, attr, attr_0 and like, like_0.  We also see that field_cd, race, age don't have much if any correlation to the other attributes and gender has some with attritiveness, overall like and match of course.  
-
- 
  
   *  Check for datatypes:After checking datatypes we saw this to be unnecessary because they were all numerical, no scaling, imputation 						or encoding needed. 
 				
 ![DataTypesandSIzeOfCleanedData](https://user-images.githubusercontent.com/94208810/163212181-6fb18390-181f-4379-9b53-c753767c99b2.png)
 
-We saw that no scaling or encoding needed and dataset dropped to 5905, 19. 
+We saw that no scaling or encoding needed and dataset shape dropped to 5905, 19. 
 
 
 3. Feature Selection: Decide which variables will be used for our model. We will need to define our features/Independent Variables 	(X) and Dependent Variable (y) is defined. 
         * X: Features that will be used to predict the y variables. 
         * Y: Target Variable (“Match (1) or Not Matched(0)”) 
-
-
-    * Data Splitting: we will use the Scikit-Learn's train_test_split function. Split the Data into Training data and Testing data.
+    
+    * Data Splitting: we will use the Scikit-Learn's train_test_split function. Note: A problem that can occur if data isn't split correctly is underfitting and overfitting of your model. 
        * Train Data (80%): This data is used to build the model that predicts outcome. 
        * Test Data (20%):  This data is applied to the trained model to make predictions after the model is trained with the training data. 
+
+![Train_test_split](https://user-images.githubusercontent.com/94208810/163235425-41bbbcc2-a33d-4f92-85ec-7a21efd47348.png)
 
 4.  Modeling/Design/Define the Model: Once the Data is defined, and it is split into training and testing data. It is time to design the model. We chose a Supervised Learning Model because our data is labeled data and are using this model for its ability to use labled datasets to train algorithms to classify  data or predict outcomes.  We also know we will use a Classification Model because we know Classification models belong to the class of conditional models, that is, probabilistic models that specify the conditional probability distributions of the output data given the input data.
 We chose to use two different classification algorithms to decide which one performs best then we will determine  which model had better performance. We will start with a Logistic Regression model, then try the ensemble classifier Balanced Random Forest. 
@@ -173,7 +172,7 @@ We chose to use two different classification algorithms to decide which one perf
 Set up our model by importing and defining which algorithm we will be using.
 * Train the model: trained the model on training set of data. 
 * Fit the model with testing data.
-A problem that can occur if data isn't split correctly is underfitting and overfitting of your model. 
+
 We can visualize the data split by importing a counter function. Below is a picture of our training and testing sets. 
 
 
