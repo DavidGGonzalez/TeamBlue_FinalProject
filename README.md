@@ -186,6 +186,9 @@ We chose to use two different classification algorithms to decide which one perf
 	
 -	Benefits: Works well with non-linear data. It is known to have better accuracy than other algorithms. It is flexable like logistic regression and can work on both regression and classification problems. It also makes it easy to view the importance of the input features. I have included a picture of that. 
 	
+![feature importance](https://user-images.githubusercontent.com/94208810/163266631-bed4c904-4996-451b-bbfc-e8b354288720.png)
+
+	
 -	Limitations: It can be slower to run and test and make it real time testing ineffective. 
 -	Train the model
 	Balanced Random Forest we imported BalancedRandomForestClassifier form imblearn.ensemble.
@@ -198,9 +201,14 @@ We chose to use two different classification algorithms to decide which one perf
     
 	##### Evaluate the Logistic Regression Model
 	* We see from accuracy score we had 0.6431587123608596 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.    
+	
+
 
 	##### Evaluate the BalancedRandomForest Model
 	* We see from accuracy score we had 0.7650979384995082 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.
+
+
+
 
 	#### Balanced Random Forest classifier showed improvement from Logistic Regression with an accuracy score of 0.7650979384995082
 
