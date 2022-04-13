@@ -36,6 +36,7 @@ Fun topic and met requirements for machine learning project.
   * Output is Match or No Match based on input data from speed dating experiement.
 
 ### Team Roles
+
 #### Segment 1 
 - Gajardoni, Ana: Triangle Role: Created mockup Database including the ERD and explanation of how it is integrated into database. 
 - Thraher, Kristi: Square Role: Mockup of Machine Learning Model, including which model we choose and why along with the ReadMe file. 
@@ -65,7 +66,8 @@ Segment 1
 
 Segment 2 
 
-![Segment2GitHubBranches](https://user-images.githubusercontent.com/94208810/163196129-9ff1f2d4-8f1e-47eb-9928-
+![Segment2GitHubBranches](https://user-images.githubusercontent.com/94208810/163231737-8660512f-41f5-45d3-b443-921e1a0a3147.png)
+
 
 
 ### Technologies:
@@ -175,27 +177,27 @@ A problem that can occur if data isn't split correctly is underfitting and overf
 We can visualize the data split by importing a counter function. Below is a picture of our training and testing sets. 
 
 
-##### Logistic Regresstion: is chosen to predict a dependent categorical target variable in our case match or no match. Algorithm  was chosen because the dependent variable is  (binary), 0,1.  It is a predictive analysis and used to describe data and explain the realationship of the one dependent variable and one or more independent variables. Will there be a match or not based on the independent variables.  For Logistic Regression we import LogisticRegression from the sklearn.linear model library and set up our model with the training data. 
+	##### Logistic Regresstion: is chosen to predict a dependent categorical target variable in our case match or no match. Algorithm  was chosen because the dependent variable is  (binary), 0,1.  It is a predictive analysis and used to describe data and explain the realationship of the one dependent variable and one or more independent variables. Will there be a match or not based on the independent variables.  For Logistic Regression we import LogisticRegression from the sklearn.linear model library and set up our model with the training data. 
 
-* Train the model
-* Fit the model with training data
+	* Train the model
+	* Fit the model with training data
 
-##### Ensemble Classiier Balanced Random Forest: we used Ensemble Classifier to predict if match or not because it creates a machine learning model that is capable of performing better than individually by using multiple models together. THis will help improve the accuracy and robustness as well as decrecrease the variance of the model and increase the overall perfomance of the model. For Balanced Random Forest we imported BalancedRandomForestClassifier form imblearn.ensemble. 
+	##### Ensemble Classiier Balanced Random Forest: we used Ensemble Classifier to predict if match or not because it creates a machine learning model that is capable of performing better than individually by using multiple models together. THis will help improve the accuracy and robustness as well as decrecrease the variance of the model and increase the overall perfomance of the model. For Balanced Random Forest we imported BalancedRandomForestClassifier form imblearn.ensemble. 
 
-* Train the model
-* Fit the model with training data
+	* Train the model
+	* Fit the model with training data
 
 5.  Evaluate the model using the test data. 
     * Use metrics such as accuracy, precision, recall, confusion matrix to show performance of our model. 
     * Predict the outcome with different metrics such as accuracy score(a measurement of how closely you predicted the right outcome), precision( represents the ratio of true positive to the sum of true positive and false positive.) and f1 score(F1-score, is a measure of a model’s accuracy on a dataset.)
     
-##### Evaluate the Logistic Regression Model
-* We see from accuracy score we had 0.6431587123608596 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.    
+	##### Evaluate the Logistic Regression Model
+	* We see from accuracy score we had 0.6431587123608596 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.    
 
-##### Evaluate the BalancedRandomForest Model
-* We see from accuracy score we had 0.7650979384995082 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.
+	##### Evaluate the BalancedRandomForest Model
+	* We see from accuracy score we had 0.7650979384995082 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.
 
-### Balanced Random Forest classifier showed imporvement from Logistic Regression with an accuracy score of 0.7650979384995082
+	#### Balanced Random Forest classifier showed improvement from Logistic Regression with an accuracy score of 0.7650979384995082
 
 
 ## Provisional Database 
