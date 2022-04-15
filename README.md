@@ -213,7 +213,10 @@ We chose to use two different classification algorithms to decide which one perf
 	
 	* We see from accuracy score we had 0.7650979384995082 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.
 
-	#### Balanced Random Forest classifier showed improvement from Logistic Regression with an accuracy score of 0.7650979384995082
+
+#### Conclusion and Summary 
+The Main Goal of this project was to predict if there would be a match or not based on the input data provided. After some Data preprocessing and using visualizations such as the correlation matrix and others we were able to define a dataset by splitting it into training and testing data and ran two supervised machine learning algorithms with the data. In the end we saw that Balanced Random Forest Classifer algorithm showed a higher probability of predicting correctly than the Logistic Regression algorithm. 
+
 
 
 ## Provisional Database 
