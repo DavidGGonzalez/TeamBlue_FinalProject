@@ -2,6 +2,12 @@
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/YgvBZf
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
+DROP TABLE IF EXISTS preference_perception CASCADE;
+DROP TABLE IF EXISTS sd_wave_pair CASCADE;
+DROP TABLE IF EXISTS person CASCADE;
+DROP TABLE IF EXISTS sd_wave CASCADE;
+DROP TABLE IF EXISTS survey_question CASCADE;
+DROP TABLE IF EXISTS field CASCADE;
 
 CREATE TABLE "person" (
     "person_id" int   NOT NULL,
