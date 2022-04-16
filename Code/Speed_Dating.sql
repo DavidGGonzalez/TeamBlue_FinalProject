@@ -10,7 +10,7 @@ CREATE TABLE "person" (
     "gender" int   NOT NULL,
     "age" int   NOT NULL,
     "race" int   NOT NULL,
-    "field" char(100)   NOT NULL,
+    "field_id" int   NOT NULL,
     "importance_race" int   NOT NULL,
     "importance_religion" int   NOT NULL,
     "goal" int   NOT NULL,
@@ -38,6 +38,14 @@ CREATE TABLE "person" (
      )
 );
 
+CREATE TABLE "field" (
+    "field_id" int   NOT NULL,
+    "field_desc" char(100)   NOT NULL,
+    CONSTRAINT "pk_field" PRIMARY KEY (
+        "field_id"
+     )
+);
+
 CREATE TABLE "sd_wave" (
     "wave_id" int   NOT NULL,
     "wave_date" date   NOT NULL,
@@ -56,6 +64,8 @@ CREATE TABLE "sd_wave_pair" (
     "score_fun" int   NOT NULL,
     "score_ambitious" int   NOT NULL,
     "score_shared_interests" int   NOT NULL,
+    "like" int   NOT NULL,
+    "probability" int   NOT NULL,
     "decision" int   NOT NULL,
     "match" int   NOT NULL,
     CONSTRAINT "pk_sd_wave_pair" PRIMARY KEY (
@@ -91,6 +101,9 @@ CREATE TABLE "survey_question" (
 ALTER TABLE "person" ADD CONSTRAINT "fk_person_wave_id" FOREIGN KEY("wave_id")
 REFERENCES "sd_wave" ("wave_id");
 
+ALTER TABLE "person" ADD CONSTRAINT "fk_person_field_id" FOREIGN KEY("field_id")
+REFERENCES "field" ("field_id");
+
 ALTER TABLE "sd_wave_pair" ADD CONSTRAINT "fk_sd_wave_pair_wave_id" FOREIGN KEY("wave_id")
 REFERENCES "sd_wave" ("wave_id");
 
@@ -100,8 +113,11 @@ REFERENCES "person" ("person_id");
 ALTER TABLE "sd_wave_pair" ADD CONSTRAINT "fk_sd_wave_pair_partner_id" FOREIGN KEY("partner_id")
 REFERENCES "person" ("person_id");
 
-ALTER TABLE "preference_perception" ADD CONSTRAINT "fk_preference_perception_wave_id_person_id" FOREIGN KEY("wave_id", "person_id")
-REFERENCES "person" ("wave_id", "person_id");
+ALTER TABLE "preference_perception" ADD CONSTRAINT "fk_preference_perception_wave_id" FOREIGN KEY("wave_id")
+REFERENCES "sd_wave" ("wave_id");
+
+ALTER TABLE "preference_perception" ADD CONSTRAINT "fk_preference_perception_person_id" FOREIGN KEY("person_id")
+REFERENCES "person" ("person_id");
 
 ALTER TABLE "preference_perception" ADD CONSTRAINT "fk_preference_perception_question_id" FOREIGN KEY("question_id")
 REFERENCES "survey_question" ("question_id");
