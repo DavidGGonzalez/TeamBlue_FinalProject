@@ -2,6 +2,9 @@
 # Team Blue, Final Project 2022
 University of Miami, *Data Analytics Boot camp*, Final Project
 
+# Google Slides Presentation
+https://docs.google.com/presentation/d/e/2PACX-1vQrDJtNu8tUs8CXo1efHpvvtLu_8gVtY2kp-86YUJkOw_ofrlde-w-k8xCqwpE1SxQlDK_w8nynwsA2/pub?start=false&loop=false&delayms=15000
+
 ## SEGMENT 1 and Segment 2
 
 ### Participants
