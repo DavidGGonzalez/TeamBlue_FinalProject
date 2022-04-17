@@ -132,7 +132,7 @@ Note: Data Labels: Subject to change as data gets cleaned and better classified:
 Database mapping (from original CSV dataset):
 To start, each “contender” is asked to fill a background questionnaire 
 regarding various points such as age, race, interests and how important he rates a 
-few matters such as same religion or same race – the list long but simple. After 
+few matters such as same religion or same race – the list is long but simple. After 
 each date, the participant is asked to rate the partner’s attributes culminating in 
 one variable: whether the participant wants (or not) to have a date with the partner.
 This is mapped in the Database in entities: PERSON, SD_WAVE, SD_WAVE_PERSON, 
@@ -144,29 +144,82 @@ of the questions proposed repeat a few times and seem more related to behavior
 than necessarily to the choices and decisions during the event. That is very 
 interesting data though – especially if the answer for the same question can be 
 mapped over time showing the progress. Such questions and their answers are 
-mapped in the following Database entities: PREFERENCE_PERCEPTION and 
+mapped in the following Database entities: PREFERENCE_PERCEPTION and SURVEY_QUESTION.
 
-SURVEY_QUESTION.
-A initial ERD proposal is shown below – this might change slightly according to the 
-data we find in the dataset.
+
+### The Database
 
  __*ERD*__
 
-![ERD](./Images/Skecht_ERD.png)
+![ERD](./Images/SpeedDate_ERD.png)
 
+The database consists of six entities:
+-	SD_WAVE: table that holds each “round” of the experiment; the name wave was kept just for conformity with the original naming.
+
+-	FIELD: table that holds the area of study/career of the participants; it was coded as follows:
+o	1= Law  
+o	2= Math
+o	3= Social Science, Psychologist 
+o	4= Medical Science, Pharmaceuticals, and Bio Tech 
+o	5= Engineering  
+o	6= English/Creative Writing/ Journalism 
+o	7= History/Religion/Philosophy 
+o	8= Business/Econ/Finance 
+o	9= Education, Academia 
+o	10= Biological Sciences/Chemistry/Physics
+o	11= Social Work 
+o	12= Undergrad/undecided 
+o	13=Political Science/International Affairs 
+o	14=Film
+o	15=Fine Arts/Arts Administration
+o	16=Languages
+o	17=Architecture
+o	18=Other
+
+-	SURVEY_QUESTION: table that holds the questions made during the event. The entire experiment involved more than just matches, but many surveys that could continue up to four weeks after the date event itself. Those questions would in fact repeat in different phases and the intent was to draw a behavior picture based on their progressive responses. The questions are listed below:
+o	What do you look for in the opposite sex?
+o	What do you think MOST of your fellow men/women look for in the opposite sex?
+o	What do you think the opposite sex looks for in a date?
+o	How do you think you measure up?
+o	How do you think others perceive you?
+o	Distribute 100-points among the six attributes in the way that best reflects the actual importance of these attributes in your decisions.
+
+-	PREFERENCE_PERCEPTION: table that hold the results for the questionnaires filled (questions described in SURVEY_QUESTION). In some events, the experiment used different scoring systems and some adjustments had to be made in order to get more regular data.
+
+-	PERSON: table that holds each participant’s profile:
+o	personal characteristics: age, gender, race
+o	interests (scores from 1-10): sports, tv sports, exercise, dining, museums, art, hiking, gaming, clubbing, reading, tv, theater, movies, concerts, music, shopping, yoga 
+o	preferences/other
+	Scores 1-10: how important it is the partner is of the same race or religion
+	How often does the participant go out or on dates?
+•	Several times a week=1
+•	Twice a week=2
+•	Once a week=3
+•	Twice a month=4
+•	Once a month=5
+•	Several times a year=6
+•	Almost never=7
+
+	What is your goal in the event?
+•	Seemed like a fun night out=1
+•	To meet new people=2
+•	To get a date=3
+•	Looking for a serious relationship=4
+•	To say I did it=5
+•	Other=6
+
+-	SD_WAVE_PAIR: table that holds the results for each date: not only scores given or final match, but also the perception of each candidate on how he/she feels the partner will like her/him.
+
+
+### Tables Samples
 
 Main tables’ samples roughly obtained from the original CSV are also displayed 
 below. The data might change slightly (addition/removal of fields), but the whole 
 idea of how the data is stored should be the same.
 
-__*Person Data*__
+__*Sample Person Data*__
 
 ![Sample_Person_Data](./Images/Sample_Person_Data.png)
-
-
-__*Sample SD WAVE Person*__
-
-![Sample_SD_Wave_Person](./Images/Sample_SD_Wave_Person.png)
 
 
 __*Sample SD Wave Pair*__
