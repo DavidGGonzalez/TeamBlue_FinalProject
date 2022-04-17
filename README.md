@@ -177,36 +177,35 @@ The database consists of six entities:
     * 18=Other
 
 -	SURVEY_QUESTION: table that holds the questions made during the event. The entire experiment involved more than just matches, but many surveys that could continue up to four weeks after the date event itself. Those questions would in fact repeat in different phases and the intent was to draw a behavior picture based on their progressive responses. The questions are listed below:
-o	What do you look for in the opposite sex?
-o	What do you think MOST of your fellow men/women look for in the opposite sex?
-o	What do you think the opposite sex looks for in a date?
-o	How do you think you measure up?
-o	How do you think others perceive you?
-o	Distribute 100-points among the six attributes in the way that best reflects the actual importance of these attributes in your decisions.
+    * What do you look for in the opposite sex?
+    * What do you think MOST of your fellow men/women look for in the opposite sex?
+    *	What do you think the opposite sex looks for in a date?
+    *	How do you think you measure up?
+    *	How do you think others perceive you?
+    *	Distribute 100-points among the six attributes in the way that best reflects the actual importance of these attributes in your decisions.
 
 -	PREFERENCE_PERCEPTION: table that hold the results for the questionnaires filled (questions described in SURVEY_QUESTION). In some events, the experiment used different scoring systems and some adjustments had to be made in order to get more regular data.
 
 -	PERSON: table that holds each participant’s profile:
-o	personal characteristics: age, gender, race
-o	interests (scores from 1-10): sports, tv sports, exercise, dining, museums, art, hiking, gaming, clubbing, reading, tv, theater, movies, concerts, music, shopping, yoga 
-o	preferences/other
-	Scores 1-10: how important it is the partner is of the same race or religion
-	How often does the participant go out or on dates?
-•	Several times a week=1
-•	Twice a week=2
-•	Once a week=3
-•	Twice a month=4
-•	Once a month=5
-•	Several times a year=6
-•	Almost never=7
-
-	What is your goal in the event?
-•	Seemed like a fun night out=1
-•	To meet new people=2
-•	To get a date=3
-•	Looking for a serious relationship=4
-•	To say I did it=5
-•	Other=6
+    * personal characteristics: age, gender, race
+    *	interests (scores from 1-10): sports, tv sports, exercise, dining, museums, art, hiking, gaming, clubbing, reading, tv, theater, movies, concerts, music, shopping, yoga 
+    * preferences/other: 
+        * Scores 1-10: how important it is the partner is of the same race or religion
+        * How often does the participant go out or on dates?
+            - Several times a week=1
+            -	Twice a week=2
+            -	Once a week=3
+            -	Twice a month=4
+            -	Once a month=5
+            - Several times a year=6
+            -	Almost never=7
+       * What is your goal in the event?
+          -	Seemed like a fun night out=1
+          - To meet new people=2
+          - To get a date=3
+          - Looking for a serious relationship=4
+          - To say I did it=5
+          - Other=6
 
 -	SD_WAVE_PAIR: table that holds the results for each date: not only scores given or final match, but also the perception of each candidate on how he/she feels the partner will like her/him.
 
