@@ -157,24 +157,24 @@ The database consists of six entities:
 -	SD_WAVE: table that holds each “round” of the experiment; the name wave was kept just for conformity with the original naming.
 
 -	FIELD: table that holds the area of study/career of the participants; it was coded as follows:
-o	1= Law  
-o	2= Math
-o	3= Social Science, Psychologist 
-o	4= Medical Science, Pharmaceuticals, and Bio Tech 
-o	5= Engineering  
-o	6= English/Creative Writing/ Journalism 
-o	7= History/Religion/Philosophy 
-o	8= Business/Econ/Finance 
-o	9= Education, Academia 
-o	10= Biological Sciences/Chemistry/Physics
-o	11= Social Work 
-o	12= Undergrad/undecided 
-o	13=Political Science/International Affairs 
-o	14=Film
-o	15=Fine Arts/Arts Administration
-o	16=Languages
-o	17=Architecture
-o	18=Other
+  - 1= Law  
+  - 2= Math
+  - 3= Social Science, Psychologist 
+  - 4= Medical Science, Pharmaceuticals, and Bio Tech 
+  - 5= Engineering  
+  - 6= English/Creative Writing/ Journalism 
+  - 7= History/Religion/Philosophy 
+  - 8= Business/Econ/Finance 
+  - 9= Education, Academia 
+  - 10= Biological Sciences/Chemistry/Physics
+  - 11= Social Work 
+  - 12= Undergrad/undecided 
+  - 13=Political Science/International Affairs 
+  - 14=Film
+  - 15=Fine Arts/Arts Administration
+  - 16=Languages
+  - 17=Architecture
+  - 18=Other
 
 -	SURVEY_QUESTION: table that holds the questions made during the event. The entire experiment involved more than just matches, but many surveys that could continue up to four weeks after the date event itself. Those questions would in fact repeat in different phases and the intent was to draw a behavior picture based on their progressive responses. The questions are listed below:
 o	What do you look for in the opposite sex?
