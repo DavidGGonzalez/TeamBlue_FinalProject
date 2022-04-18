@@ -326,35 +326,36 @@ __*Sample Preference Perception*__
 ![Sample_Preference_Perception](./Images/Sample_Preference_Perception.png)
 
 
-
-
 ## Dashboard 
-#### Blueprint for the dashboard: 
-Storyboard on a Google Slide(s): Link to Google Slides Presentation (This might change):
-https://docs.google.com/presentation/d/e/2PACX-1vQrDJtNu8tUs8CXo1efHpvvtLu_8gVtY2kp-86YUJkOw_ofrlde-w-k8xCqwpE1SxQlDK_w8nynwsA2/pub?start=false&loop=false&delayms=15000
+Note: __*It could change due to data management and final decision for prior final publication*__
 
-Including the following:  
-Reports:
-Tile: Total number of entries
-Tile: Total number of Participants; based on DB cleaned.
-Tile: Total number of Matches
-Bar: Age bins and Gender.
-Pie: Race
-Pie: Profession; Law, Economic, etc.
-Pie: City of destination
+### *Reports*
+- Tile: Total number of entries
+- Tile: Total number of Participants; based on DB cleaned.
+- Tile: Total number of Matches
+- Bar: Age bins and Gender.
+- Pie: Race
+- Pie: Profession; Law, Economic, etc.
+- Pie: City of destination
 
-Dashboard
+
+### *Dashboard*
 It will contain all reports with the interaction between them wherever is reasonable.
-Dashboard Interaction:
+
+### *Dashboard Interaction*
 Wherever it is reasonable, clicking on each widget will cause others to update with the exception of the totals tiles
 Note: Modifications to be made as data gets created/manipulated prior to the creation of the final dashboard.
 
-Description of the tool(s) that will be used to create the final dashboard
+### *Storyboard*
+https://docs.google.com/presentation/d/e/2PACX-1vQrDJtNu8tUs8CXo1efHpvvtLu_8gVtY2kp-86YUJkOw_ofrlde-w-k8xCqwpE1SxQlDK_w8nynwsA2/pub?start=false&loop=false&delayms=15000&slide=id.p1
+
+
+### *Tools*
+Note: __*Not defined yet but definetely Tableau will be used to create the reports, dashboard, and storyboard, either emebded or a link will be provided*__
+
 * Data Visualization
 	- Tableau: create and host our dashboard. It will be directly tied to our Postgres database hosted on AWS via a 		direct connection.
-- Deployment environment:
-  	*	Heroku
-	* 	Flask
+
 	
 		
 
