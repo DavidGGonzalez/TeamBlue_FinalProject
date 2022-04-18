@@ -349,13 +349,12 @@ Dashboard Interaction:
 Wherever it is reasonable, clicking on each widget will cause others to update with the exception of the totals tiles
 Note: Modifications to be made as data gets created/manipulated prior to the creation of the final dashboard.
 
-	Description of the tool(s) that will be used to create the final dashboard
-	* Data Visualization
-  		* Tableau: create and host our dashboard. It will be directly tied to our Postgres database hosted on AWS via a 		direct connection.
-
-	* Deployment environment:
-  		*	Heroku
-		* 	Flask
+Description of the tool(s) that will be used to create the final dashboard
+* Data Visualization
+- Tableau: create and host our dashboard. It will be directly tied to our Postgres database hosted on AWS via a 		direct connection.
+- Deployment environment:
+  	*	Heroku
+	* 	Flask
 	
 		
 
