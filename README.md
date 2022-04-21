@@ -50,14 +50,16 @@ Fun topic and met requirements for machine learning project.
 - Thraher, Kristi: Square Role: Refine the machine learning model you'll be using (train and test).  
 - Gonzalez, David: Circle/X Role: Continue with analysis and create visuals to acoompany the data story. Begin Outline of dashboard.
 
-### Team Communication and Collaboration:
-Team communicated through Slack and Zoom for scheduled meetings.  
-Github is used for the project location along with source files. 
+#### Segment 3 
+- Gajardoni, Ana: Square Role: Complete peer reviews on the code. 
+- Thraher, Kristi: Triangle Role: Create a draft presentation to share with your class.
+- Gonzalez, David: Circle Role: Create a dashboard to display your findings.
+
 
 ## GitHub
 See repository: https://github.com/DavidGGonzalez/TeamBlue_FinalProject
 
-GitHub contains the following requirements for segment 1:
+GitHub contains the following requirements: 
 * Main Branch
 * ReadME file
 * Individual Branches
@@ -69,9 +71,10 @@ Segment 1
 
 Segment 2 
 
-![Segment2GitHubBranches](https://user-images.githubusercontent.com/94208810/163231737-8660512f-41f5-45d3-b443-921e1a0a3147.png)
+![Segment2GitHubBranches](./Images/Segment2GitHubBranches.png)
 
-
+Segment 3
+<ADD PIMAGE OF OUR BRanches for segment 3 >
 
 ### Technologies:
 * Application development:  
@@ -110,8 +113,6 @@ The following is image showing the input data and returning labels.
 
 ![Preliminary DataFrame](./Images/PreliminaryDataFrame.png)
 
-
-
 Note: Data Labels: Subject to change as data gets cleaned and better classified: age, education level, income, race, religion, date frequency, survey answers.
 
 2.  Data Preprocessing
@@ -120,27 +121,28 @@ Note: Data Labels: Subject to change as data gets cleaned and better classified:
     * Simplify the DataSet: The data was gathered from speed dating events from 2002-2004. During the date participants would have 4 minute "dates" with another participant of the opposite gender. At the end of each 4 minute "date" each participant had a score card and were asked to rate their date on specifics. The dataset also includes some demographic info, such as gender, age, race, career, income, goal, what others find valuable in a mate, and lifestyle info. This dataset is large with 8378 rows and 195 columns.
 We decided we did not need all of this information so decided to simplify our dataset. The dataset is now 8378 rows and 20 columns. 
 
-![SimplifyDataSet](https://user-images.githubusercontent.com/94208810/163199511-0a46042a-c178-4eef-ba1b-b850dd8b3b4c.png)
+![SimplifyDataSet](./Images/SimplifyDataSet.png)
+
 
 * Data Exploration/Visualizations 
 * For Fun we decided to see the distribution of matches for age, race, gender with matches and also how many matches were made. 
 
-![Race and Gender Img](https://user-images.githubusercontent.com/94208810/163215223-ca6788ab-bcb6-4f5f-ac67-203c017d26b0.png)
+![RaceAndGender](./Images/RaceAndGender.png)
 
 
-![age distr](https://user-images.githubusercontent.com/94208810/163215662-d137fead-faf4-43d7-8132-ce52f26f4ff2.png)
+![AgeDistribution](./Images/AgeDistribution.png)
 
-![match distribution](https://user-images.githubusercontent.com/94208810/163216021-88e20bfa-c51b-4fd0-8ee8-c4d936e151a9.png)
+![MatchDistribution](./Images/MatchDistribution.png)
 
 
 #### Data Cleaning
 * Check for null values 
  
-![CheckNullVlaues](https://user-images.githubusercontent.com/94208810/163200458-5c2dbe6f-568d-46a5-ba7e-9c853f438e77.png)
+![CheckNullValues](./Images/CheckNullValues.png)
 
 We saw several had missing values but we see the income attribute has 4099 missing datapoints, which is half of the entire data so will drop the income column. By dropping this column it won't affect the dataset's integrity. We also see that there are several missing values from all columns but gender, and match so we may have to some imputation or drop null columns depending on percentage of missing values and how it would affect our data. We saw several missing values did exist so we will handle those by removing them completly if it has more than 50-75% of missing values. This method is advised only when there are enough samples in the data set. Lets first view to see if less than .50
 
-![NanValuesBasedOnDataMissing](https://user-images.githubusercontent.com/94208810/163211164-ad55e3c4-de6f-43e7-af8d-8ff6a420a89c.png)
+![NaNValuesBasedOnDataMissing](./Images/NaNValuesBasedOnDataMissing.png)
 
 We dropped all null values because it was way less than 50% of our dataset.
 
@@ -148,13 +150,13 @@ We dropped all null values because it was way less than 50% of our dataset.
 
 * Check Correlation of features: Pandas' DataFrame corr () Method Correlation to measure the strength of the linear relationship between two variables.This method computes the pairwise correlation of columns, excluding NA/null values. 
 
-![CorrMatrix](https://user-images.githubusercontent.com/94208810/163203265-10bb65c3-0784-4c54-8490-2724597a3f0e.png)
+![CorrMatrix](./Images/CorrMatrix.png)
    
 The correlation coefficients along the diagonal of the table are all equal to 1 because each variable is perfectly correlated with itself. The others are close but not past .75. We also see that match has high correlation to fun, fun_o, attr, attr_0 and like, like_0.  We also see that field_cd, race, age don't have much if any correlation to the other attributes and gender has some with attritiveness, overall like and match of course.  
  
   *  Check for datatypes:After checking datatypes we saw this to be unnecessary because they were all numerical, no scaling, imputation 						or encoding needed. 
 				
-![DataTypesandSIzeOfCleanedData](https://user-images.githubusercontent.com/94208810/163212181-6fb18390-181f-4379-9b53-c753767c99b2.png)
+![DataTypesAndSizeOfCleanedData](./Images/DataTypesAndSizeOfCleanedData.png)
 
 We saw that no scaling or encoding needed and dataset shape dropped to 5905, 19. 
 
@@ -167,7 +169,7 @@ We saw that no scaling or encoding needed and dataset shape dropped to 5905, 19.
        * Train Data (80%): This data is used to build the model that predicts outcome. 
        * Test Data (20%):  This data is applied to the trained model to make predictions after the model is trained with the training data. This is how we make the algorithm learn the relationship between our predictors(x) and outcome(y) so that it can make a prediction in the future on new data. 
 
-![Train_test_split](https://user-images.githubusercontent.com/94208810/163235425-41bbbcc2-a33d-4f92-85ec-7a21efd47348.png)
+![Train_test_split](./Images/Train_test_split.png)
 
 4.  Modeling/Design/Define the Model: Once the Data is defined, and it is split into training and testing data. It is time to design the model. We chose a Supervised Learning Model because our data is labeled data and are using this model for its ability to use labled datasets to train algorithms to classify  data or predict outcomes.  We also know we will use a Classification Model because we know Classification models belong to the class of conditional models, that is, probabilistic models that specify the conditional probability distributions of the output data given the input data.
 We chose to use two different classification algorithms to decide which one performs best then we will determine  which model had better performance. We will start with a Logistic Regression model, then try the ensemble classifier Balanced Random Forest. 
@@ -189,7 +191,7 @@ We chose to use two different classification algorithms to decide which one perf
 	
 -	Benefits: Works well with non-linear data. It is known to have better accuracy than other algorithms. It is flexable like logistic regression and can work on both regression and classification problems. It also makes it easy to view the importance of the input features. I have included a picture of that. 
 	
-![feature importance](https://user-images.githubusercontent.com/94208810/163266631-bed4c904-4996-451b-bbfc-e8b354288720.png)
+![FeatureImportance](./Images/FeatureImportance.png)
 
 	
 -	Limitations: It can be slower to run and test and make it real time testing ineffective. 
@@ -204,7 +206,7 @@ We chose to use two different classification algorithms to decide which one perf
     
 	##### Evaluate the Logistic Regression Model
 	
-	![LogRegTTE](https://user-images.githubusercontent.com/94208810/163267393-88bad6e7-05fd-4140-acbe-d028d1730ecd.png)
+	![LogRegTTE](./Images/LogRegTTE.png)
 	
 	* We see from accuracy score we had 0.6431587123608596 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.    
 	
@@ -212,14 +214,13 @@ We chose to use two different classification algorithms to decide which one perf
 
 	##### Evaluate the BalancedRandomForest Model
 	
-	![RandomForestTTE](https://user-images.githubusercontent.com/94208810/163267435-ab4d8d73-748d-4f1b-86e0-5a3424be991f.png)
+	![RandomForestTTE](./Images/RandomForestTTE.png)
 	
 	* We see from accuracy score we had 0.7650979384995082 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.
 
 
-#### Conclusion and Summary 
+#### Conclusion and Summary of Machine Learning Model(s)
 The Main Goal of this project was to predict if there would be a match or not based on the input data provided. After some Data preprocessing and using visualizations such as the correlation matrix and others we were able to define a dataset by splitting it into training and testing data and ran two supervised machine learning algorithms with the data. In the end we saw that Balanced Random Forest Classifer algorithm showed a higher probability of predicting correctly than the Logistic Regression algorithm. 
-
 
 
 ## Provisional Database 
@@ -294,8 +295,9 @@ The database consists of six entities:
             -	Once a month=5
             - Several times a year=6
             -	Almost never=7
-       * What is your goal in the event?
-          -	Seemed like a fun night out=1
+
+        * What is your goal in the event?
+          - Seemed like a fun night out=1
           - To meet new people=2
           - To get a date=3
           - Looking for a serious relationship=4
@@ -326,10 +328,49 @@ __*Sample Preference Perception*__
 ![Sample_Preference_Perception](./Images/Sample_Preference_Perception.png)
 
 
+### Database Creation using the Speed_Dating.sql commands
 
+![DatabaseCreation](./Images/DatabaseCreation.png)
+
+
+### Export Data to our PostgreSQL Database (SpeedDate)
+
+![ExportDataToOurPostgreSQLDB](./Images/ExportDataToOurPostgreSQLDB.png)
+
+### Database was updated
+
+![DB_TBL_AllTables](./Images/DB_TBL_AllTables.png)
 
 ## Dashboard 
+Note: __*It could change due to data management and final decision for prior final publication*__
 
-Tools: TBD as we progress with project
+### *Reports*
+- Tile: Total number of entries
+- Tile: Total number of Participants; based on DB cleaned.
+- Tile: Total number of Matches
+- Bar: Age bins and Gender.
+- Pie: Race
+- Pie: Profession; Law, Economic, etc.
+- Pie: City of Origin
 
-Model Deployment
+
+### *Dashboard*
+It will contain all reports with the interaction between them wherever is reasonable.
+
+### *Dashboard Interaction*
+Wherever it is reasonable, clicking on each widget will cause others to update with the exception of the totals tiles
+Note: Modifications to be made as data gets created/manipulated prior to the creation of the final dashboard.
+
+### *Storyboard*
+*Pending creation*
+
+### *Tools*
+Note: __*Not defined yet but definetely Tableau will be used to create the reports, dashboard, and storyboard, either emebded or a link will be provided*__
+
+* Data Visualization
+	- Tableau: create and host our dashboard. It will be directly tied to our Postgres database hosted on AWS via a 		direct connection.
+
+	
+		
+
+
