@@ -20,6 +20,7 @@ CREATE TABLE "person" (
     "importance_race" int   NOT NULL,
     "importance_religion" int   NOT NULL,
     "goal" int   NOT NULL,
+    "origin" char(100)   NOT NULL,
     "freq_date" int   NOT NULL,
     "freq_go_out" int   NOT NULL,
     "interest_sports" int   NOT NULL,
