@@ -50,14 +50,16 @@ Fun topic and met requirements for machine learning project.
 - Thraher, Kristi: Square Role: Refine the machine learning model you'll be using (train and test).  
 - Gonzalez, David: Circle/X Role: Continue with analysis and create visuals to acoompany the data story. Begin Outline of dashboard.
 
-### Team Communication and Collaboration:
-Team communicated through Slack and Zoom for scheduled meetings.  
-Github is used for the project location along with source files. 
+#### Segment 3 
+- Gajardoni, Ana: Square Role: Complete peer reviews on the code. 
+- Thraher, Kristi: Triangle Role: Create a draft presentation to share with your class.
+- Gonzalez, David: Circle Role: Create a dashboard to display your findings.
+
 
 ## GitHub
 See repository: https://github.com/DavidGGonzalez/TeamBlue_FinalProject
 
-GitHub contains the following requirements for segment 1:
+GitHub contains the following requirements: 
 * Main Branch
 * ReadME file
 * Individual Branches
@@ -71,6 +73,8 @@ Segment 2
 
 ![Segment2GitHubBranches](./Images/Segment2GitHubBranches.png)
 
+Segment 3
+<ADD PIMAGE OF OUR BRanches for segment 3 >
 
 ### Technologies:
 * Application development:  
@@ -108,8 +112,6 @@ Segment 2
 The following is image showing the input data and returning labels.
 
 ![Preliminary DataFrame](./Images/PreliminaryDataFrame.png)
-
-
 
 Note: Data Labels: Subject to change as data gets cleaned and better classified: age, education level, income, race, religion, date frequency, survey answers.
 
@@ -217,9 +219,8 @@ We chose to use two different classification algorithms to decide which one perf
 	* We see from accuracy score we had 0.7650979384995082 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.
 
 
-#### Conclusion and Summary 
+#### Conclusion and Summary of Machine Learning Model(s)
 The Main Goal of this project was to predict if there would be a match or not based on the input data provided. After some Data preprocessing and using visualizations such as the correlation matrix and others we were able to define a dataset by splitting it into training and testing data and ran two supervised machine learning algorithms with the data. In the end we saw that Balanced Random Forest Classifer algorithm showed a higher probability of predicting correctly than the Logistic Regression algorithm. 
-
 
 
 ## Provisional Database 
