@@ -5,7 +5,7 @@ University of Miami, *Data Analytics Boot camp*, Final Project
 # Google Slides Presentation
 https://docs.google.com/presentation/d/e/2PACX-1vQrDJtNu8tUs8CXo1efHpvvtLu_8gVtY2kp-86YUJkOw_ofrlde-w-k8xCqwpE1SxQlDK_w8nynwsA2/pub?start=false&loop=false&delayms=15000
 
-## SEGMENT 1 and Segment 2
+## SEGMENT 1, Segment 2, and Segment 3
 
 ### Participants
 - Gajardoni, Ana
@@ -52,7 +52,7 @@ Fun topic and met requirements for machine learning project.
 
 #### Segment 3 
 - Gajardoni, Ana: Square Role: Complete peer reviews on the code. 
-- Thraher, Kristi: Triangle Role: Create a draft presentation to share with your class.
+- Thraher, Kristi: Triangle Role: Create a presentation to share with your class.
 - Gonzalez, David: Circle Role: Create a dashboard to display your findings.
 
 
@@ -63,24 +63,15 @@ GitHub contains the following requirements:
 * Main Branch
 * ReadME file
 * Individual Branches
-Individual Branches for each teammember were created 
+Individual Branches for each teammember were created in Github.
+https://github.com/DavidGGonzalez/TeamBlue_FinalProject.git
 
-Segment 1
 
-![Github branches](./Images/Github%20branches.png)
-
-Segment 2 
-
-![Segment2GitHubBranches](./Images/Segment2GitHubBranches.png)
-
-Segment 3
-<ADD PIMAGE OF OUR BRanches for segment 3 >
 
 ### Technologies:
 * Application development:  
   * Visual Code
   * Jupyter Notebook
-  * Flask (Web framework)
 
 * Data Management3372defd4526.png)
 
@@ -88,7 +79,7 @@ Segment 3
   * Pandas’ DataFrame
   * PostgreSQL
 
-* Developmen*t Languages, formatting, web visualization
+* Development Languages, formatting, web visualization
   * Python
   * JavaScript
   * HTML
@@ -98,9 +89,6 @@ Segment 3
 
 * Data Visualization
   * Tableau
-
-* Deployment environment
-  *	Heroku
 
 
 ## Machine Learning Model:
@@ -127,13 +115,11 @@ We decided we did not need all of this information so decided to simplify our da
 * Data Exploration/Visualizations 
 * For Fun we decided to see the distribution of matches for age, race, gender with matches and also how many matches were made. 
 
-![RaceAndGender](./Images/RaceAndGender.png)
-
+INSETY AGE AND RACE VISUAL
 
 ![AgeDistribution](./Images/AgeDistribution.png)
 
-![MatchDistribution](./Images/MatchDistribution.png)
-
+ISERT MATCH VISUAL 
 
 #### Data Cleaning
 * Check for null values 
@@ -208,16 +194,26 @@ We chose to use two different classification algorithms to decide which one perf
 	
 	![LogRegTTE](./Images/LogRegTTE.png)
 	
-	* We see from accuracy score we had 0.6431587123608596 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.    
-	
+	* We see from accuracy score we had 0.64% chance of this model predicting correctly if there is a match or not.  
+  The Classification Report showed an F1 score of .82 and Precision score of .82, and Recall Score of .84. 
 
+
+     -  Note: F1 Score: the mean of precision and recall scores. 
+      Recall: Useful measure of the success of prediction 
+      Accuracy: How good model is at predicting Match or No Match.
+	
 
 	##### Evaluate the BalancedRandomForest Model
 	
 	![RandomForestTTE](./Images/RandomForestTTE.png)
-	
-	* We see from accuracy score we had 0.7650979384995082 and confusion matrix shows 1160 True Positives, 87 True Negatives, 176 False Positives, and 54 False Negatives. The Classification Report showed an F1 score of .82 and Precision score of .82.
 
+  * We see from accuracy score we have a  0.77% chance of our model predicting correctly if there was a Match or not. 
+The Classification Report showed an F1 score of .78 and Precision score of .84, Recall score of .76. 
+
+- Note: 
+F1 Score: the mean of precision and recall scores. 
+Recall: Useful measure of the success of prediction 
+Accuracy: How good model is at predicting Match or No Match. 
 
 #### Conclusion and Summary of Machine Learning Model(s)
 The Main Goal of this project was to predict if there would be a match or not based on the input data provided. After some Data preprocessing and using visualizations such as the correlation matrix and others we were able to define a dataset by splitting it into training and testing data and ran two supervised machine learning algorithms with the data. In the end we saw that Balanced Random Forest Classifer algorithm showed a higher probability of predicting correctly than the Logistic Regression algorithm. 
