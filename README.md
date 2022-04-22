@@ -130,7 +130,7 @@ We decided we did not need all of this information so decided to simplify our da
 
 ![AgeDistribution](./Images/AgeDistribution.png)
 
-![MatchDistribution](./Images/MatchDistribution.png)
+![image](https://user-images.githubusercontent.com/94208810/164730616-0c111414-9a7a-4d5c-bc99-72d09f789469.png)
 
 
 #### Data Cleaning
