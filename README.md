@@ -115,11 +115,11 @@ We decided we did not need all of this information so decided to simplify our da
 * Data Exploration/Visualizations 
 * For Fun we decided to see the distribution of matches for age, race, gender with matches and also how many matches were made. 
 
-INSETY AGE AND RACE VISUAL
+
+![image](https://user-images.githubusercontent.com/94208810/164725836-76c60272-1d37-4c1d-9004-a147719d304b.png)
 
 ![AgeDistribution](./Images/AgeDistribution.png)
 
-ISERT MATCH VISUAL 
 
 #### Data Cleaning
 * Check for null values 
