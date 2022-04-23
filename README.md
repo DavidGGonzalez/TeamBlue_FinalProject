@@ -81,11 +81,7 @@ https://github.com/DavidGGonzalez/TeamBlue_FinalProject.git
 
 * Development Languages, formatting, web visualization
   * Python
-  * JavaScript
-  * HTML
-  * CSS
-  *	Bootstrap
-  *	D3
+  
 
 * Data Visualization
   * Tableau
