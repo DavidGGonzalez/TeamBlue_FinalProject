@@ -1,0 +1,73 @@
+select * from person where person_id = 1;
+select * from sd_wave_pair where wave_id = 1
+-- Defina Person Schema
+select 
+	case 
+		when p.gender = 1 then 'Male'
+		when p.gender = 0 then 'Female'
+	end as Gender,
+	min(p.age) as MinAge,
+	avg(p.age) as AvgAge,
+	max(p.age) as MaxAge
+from person p
+group by gender;
+
+-- Age bins
+/*
+[<21]
+[21 - 25]
+[26 - 30]
+[31 - 35]
+[36 - 40]
+[41 - 45]
+[46 - 50]
+[51 - 55]
+*/
+
+select 
+	p.person_id,
+	case 
+		when p.gender = 1 then 'Male'
+		when p.gender = 0 then 'Female'
+	end as Gender, 
+	p.age,
+	case
+		when age < 21 then '< 21'
+		when age >= 21 and age <=25 then '21 - 25'
+		when age > 25 and age <=30 then '26 - 30'
+		when age > 30 and age <=35 then '31 - 35'
+		when age > 35 and age <=40 then '36 - 40'
+		when age > 40 and age <=45 then '41 - 45'
+		when age > 45 and age <=50 then '46 - 50'
+		when age > 51 and age <=55 then '51 - 55'
+	end as AgeBin,
+	trim(r.racedescription) as Race,
+	trim(f.field_desc) as IntendedCareer,
+	trim(g.goaldescription) as goal,
+	trim(f1.freqdescription) as datefrequency,
+	trim(f2.freqdescription) as gooutfrequency,
+	p.importance_race as raceimportance,
+	p.importance_religion as religionimportance,
+	p.interest_sports,
+	p.interest_exercise,
+	p.interest_dining,
+	p.interest_museums,
+	p.interest_art,
+	p.interest_hiking,
+	p.interest_gaming,
+	p.interest_clubbing,
+	p.interest_reading,
+	p.interest_tv,
+	p.interest_theater,
+	p.interest_movies,
+	p.interest_concerts,
+	p.interest_music,
+	p.interest_shopping,
+	p.interest_yoga	
+from person p
+left outer join races r on(r.race_id = p.race)
+left outer join field f on(f.field_id = p.field_id)
+left outer join goals g on(g.goal_id = p.goal)
+left outer join frequencies f1 on(f1.freq_id = p.freq_date)
+left outer join frequencies f2 on(f2.freq_id = p.freq_go_out);
+
