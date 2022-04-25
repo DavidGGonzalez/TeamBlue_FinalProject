@@ -12,10 +12,6 @@ https://docs.google.com/presentation/d/e/2PACX-1vQrDJtNu8tUs8CXo1efHpvvtLu_8gVtY
 - Thraher, Kristi
 - Gonzalez, David
 
-### Initial Project File Structure
-![Segment #1 - Project File Structure](/Images/ProjectFileStructure.png)
-
-
 ### Overview 
 Given the task of collaborating with a team for a final project. The project should showcase the skills we have learned in this course. 
 We were asked to decide on a topic, create a repository, source a dataset, state the reason we selected our topic, provide questions we would like our analysis to answer and list the technologies we plan to use during this project lastly, provide mockups of a preliminary machine learning model and a provisional database. Assigned roles to team members. 
@@ -73,7 +69,7 @@ https://github.com/DavidGGonzalez/TeamBlue_FinalProject.git
   * Visual Code
   * Jupyter Notebook
 
-* Data Management3372defd4526.png)
+* Data Management
 
   * Excel
   * Pandas’ DataFrame
@@ -342,25 +338,35 @@ Note: __*It could change due to data management and final decision for prior fin
 - Tile: Total number of entries
 - Tile: Total number of Participants; based on DB cleaned.
 - Tile: Total number of Matches
-- Bar: Age bins and Gender.
-- Pie: Race
-- Pie: Profession; Law, Economic, etc.
-- Pie: City of Origin
+- Several Bar chars, i.e. Age bins and Gender, Scores averages.
+- Map visualizations
+
+
 
 
 ### *Dashboard*
 It will contain all reports with the interaction between them wherever is reasonable.
 
+URL: https://public.tableau.com/app/profile/david.g.gonzalez/viz/TeamBlue_FinalProjectRAW/TotalParticipants?publish=yes
+
+
+![Dashboard](./Images/DashboardSample.png)
+
+![Dashboard2](./Images/DashboardSample2.png)
+
+![Dashboard3](./Images/DashboardSample3.png)
+
+
+
 ### *Dashboard Interaction*
 Wherever it is reasonable, clicking on each widget will cause others to update with the exception of the totals tiles
+
 Note: Modifications to be made as data gets created/manipulated prior to the creation of the final dashboard.
 
 ### *Storyboard*
 *Pending creation*
 
 ### *Tools*
-Note: __*Not defined yet but definetely Tableau will be used to create the reports, dashboard, and storyboard, either emebded or a link will be provided*__
-
 * Data Visualization
 	- Tableau: create and host our dashboard. It will be directly tied to our Postgres database hosted on AWS via a 		direct connection.
 

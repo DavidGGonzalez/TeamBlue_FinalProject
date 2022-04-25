@@ -41,7 +41,7 @@ select
 		when age > 45 and age <=50 then '46 - 50'
 		when age > 51 and age <=55 then '51 - 55'
 	end as AgeBin,
-	trim(r.racedescription) as Race,
+	trim(r.racedescription) as Race,	
 	trim(f.field_desc) as IntendedCareer,
 	trim(g.goaldescription) as goal,
 	trim(f1.freqdescription) as datefrequency,
@@ -63,11 +63,42 @@ select
 	p.interest_concerts,
 	p.interest_music,
 	p.interest_shopping,
-	p.interest_yoga	
+	p.interest_yoga,
+	trim(p.origin2) as ComingFrom,
+	trim(p.city) as city,
+	case
+		when p.state is null then ''
+		else trim(p.state)
+	end as state,
+	trim(p.country) as country,
+	trim(p.countrycode) as countrycode	
 from person p
 left outer join races r on(r.race_id = p.race)
 left outer join field f on(f.field_id = p.field_id)
 left outer join goals g on(g.goal_id = p.goal)
 left outer join frequencies f1 on(f1.freq_id = p.freq_date)
 left outer join frequencies f2 on(f2.freq_id = p.freq_go_out);
+
+-- Expectations
+select * from person
+select * from survey_question
+select * from preference_perception
+select * from sd_wave order by wave_date asc
+select * from sd_wave_pair where match = 1
+
+select sdp.person_id,
+	avg(sdp.score_attractive) as atractive,
+	avg(sdp.score_sincere) as sincere,
+	avg(sdp.score_intelligent) as intelligence,
+	avg(sdp.score_fun) as fun,
+	avg(sdp.score_ambitious) as ambitious,
+	avg(sdp.score_shared_interests) as "shared interests",
+	(select count(wave_id) from sd_wave_pair where person_id = sdp.person_id or partner_id = sdp.person_id) as "Total Waves",
+	(select count(person_id) from sd_wave_pair where match = 1 and person_id = sdp.person_id) as "Total Matches"
+from sd_wave_pair sdp
+group by sdp.person_id
+order by sdp.person_id
+	
+	
+
 
