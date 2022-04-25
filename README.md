@@ -342,13 +342,8 @@ Note: __*It could change due to data management and final decision for prior fin
 - Map visualizations
 
 
-
-
 ### *Dashboard*
-It will contain all reports with the interaction between them wherever is reasonable.
-
-URL: https://public.tableau.com/app/profile/david.g.gonzalez/viz/TeamBlue_FinalProjectRAW/TotalParticipants?publish=yes
-
+It will contain all reports with the interaction between them wherever is reasonable. A few were created along with all necessary reports, but they were grouped in our project story
 
 ![Dashboard](./Images/DashboardSample.png)
 
@@ -364,7 +359,12 @@ Wherever it is reasonable, clicking on each widget will cause others to update w
 Note: Modifications to be made as data gets created/manipulated prior to the creation of the final dashboard.
 
 ### *Storyboard*
-*Pending creation*
+
+URL: https://public.tableau.com/app/profile/david.g.gonzalez/viz/TeamBlue_FinalProjectRAW/FinalProject2022?publish=yes
+
+
+![Story](./Images/DashboardStory.png)
+
 
 ### *Tools*
 * Data Visualization
