@@ -352,8 +352,9 @@ Wherever it is reasonable, clicking on each widget will cause others to update w
 Note: Modifications to be made as data gets created/manipulated prior to the creation of the final dashboard.
 
 ### *Storyboard*
-
 To visit our visualization story, please [click here](https://public.tableau.com/app/profile/david.g.gonzalez/viz/TeamBlue_FinalProject/FinalProject2022?publish=yes)
+
+![StoryPicture](./Images/Presentation_DashboardStorySplash_small.png)
 
 
 ### *Tools*
