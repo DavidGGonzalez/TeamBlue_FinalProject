@@ -1,4 +1,3 @@
-
 # Team Blue, Final Project 2022
 University of Miami, *Data Analytics Boot camp*, Final Project
 
@@ -360,8 +359,3 @@ To visit our visualization story, please [click here](https://public.tableau.com
 ### *Tools*
 * Data Visualization
 	- Tableau: create and host our dashboard. It will be directly tied to our Postgres database hosted on AWS via a 		direct connection.
-
-	
-		
-
-
