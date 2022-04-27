@@ -2,24 +2,28 @@
 # Team Blue, Final Project 2022
 University of Miami, *Data Analytics Boot camp*, Final Project
 
+![Data Analytics Boot camp](./Images/DashboardStoryPresentation.png)
+
+# GitHub Repository
+To access our __GitHub__ repository, [click here](https://github.com/DavidGGonzalez/TeamBlue_FinalProject)
+
 # Google Slides Presentation
-https://docs.google.com/presentation/d/e/2PACX-1vQrDJtNu8tUs8CXo1efHpvvtLu_8gVtY2kp-86YUJkOw_ofrlde-w-k8xCqwpE1SxQlDK_w8nynwsA2/pub?start=false&loop=false&delayms=15000
+To access our __presentation__ on Google Slides, [click here](https://docs.google.com/presentation/d/1978Qe2eOFByf_HdCJHyek9K5IlwTDUz8wcMCVVryRdw/edit#slide=id.g1264ff9f090_2_75)
 
-## SEGMENT 1, Segment 2, and Segment 3
 
-### Participants
+# Team Participants
 - Gajardoni, Ana
 - Thraher, Kristi
 - Gonzalez, David
 
-### Overview 
+# Project Overview 
 Given the task of collaborating with a team for a final project. The project should showcase the skills we have learned in this course. 
 We were asked to decide on a topic, create a repository, source a dataset, state the reason we selected our topic, provide questions we would like our analysis to answer and list the technologies we plan to use during this project lastly, provide mockups of a preliminary machine learning model and a provisional database. Assigned roles to team members. 
 
-### Topic
+# Topic
 SpeedDating
 
-### Source Data: 
+# Source Data: 
 Source: [Columbia Business School](http://www.stat.columbia.edu/~gelman/arm/examples/speed.dating/) - 2004
 * Data: Speed Dating Data.csv
 
@@ -34,7 +38,7 @@ Fun topic and met requirements for machine learning project.
   * Can a machine learning model help in predicting and/or improving the speed dating process? 
   * Output is Match or No Match based on input data from speed dating experiement.
 
-### Team Roles
+# Team Roles
 
 #### Segment 1 
 - Gajardoni, Ana: Triangle Role: Created mockup Database including the ERD and explanation of how it is integrated into database. 
@@ -50,19 +54,6 @@ Fun topic and met requirements for machine learning project.
 - Gajardoni, Ana: Square Role: Complete peer reviews on the code. 
 - Thraher, Kristi: Triangle Role: Create a presentation to share with your class.
 - Gonzalez, David: Circle Role: Create a dashboard to display your findings.
-
-
-## GitHub
-See repository: https://github.com/DavidGGonzalez/TeamBlue_FinalProject
-
-GitHub contains the following requirements: 
-* Main Branch
-* ReadME file
-* Individual Branches
-Individual Branches for each teammember were created in Github.
-https://github.com/DavidGGonzalez/TeamBlue_FinalProject.git
-
-
 
 ### Technologies:
 * Application development:  
@@ -360,10 +351,7 @@ Note: Modifications to be made as data gets created/manipulated prior to the cre
 
 ### *Storyboard*
 
-URL: https://public.tableau.com/app/profile/david.g.gonzalez/viz/TeamBlue_FinalProjectRAW/FinalProject2022?publish=yes
-
-
-![Story](./Images/DashboardStory.png)
+To visit our, please [click here](https://public.tableau.com/app/profile/david.g.gonzalez/viz/TeamBlue_FinalProject/FinalProject2022?publish=yes)
 
 
 ### *Tools*
