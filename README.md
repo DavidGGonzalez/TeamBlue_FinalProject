@@ -10,6 +10,9 @@ To access our __GitHub__ repository, [click here](https://github.com/DavidGGonza
 # Google Slides Presentation
 To access our __presentation__ on Google Slides, [click here](https://docs.google.com/presentation/d/1978Qe2eOFByf_HdCJHyek9K5IlwTDUz8wcMCVVryRdw/edit#slide=id.g1264ff9f090_2_75)
 
+# Dashboard (Story)
+To visit our visualitation reports, dashboards, and/or the story, please [click here](https://public.tableau.com/app/profile/david.g.gonzalez/viz/TeamBlue_FinalProject/FinalProject2022?publish=yes)
+
 
 # Team Participants
 - Gajardoni, Ana
@@ -351,7 +354,7 @@ Note: Modifications to be made as data gets created/manipulated prior to the cre
 
 ### *Storyboard*
 
-To visit our, please [click here](https://public.tableau.com/app/profile/david.g.gonzalez/viz/TeamBlue_FinalProject/FinalProject2022?publish=yes)
+To visit our visualization story, please [click here](https://public.tableau.com/app/profile/david.g.gonzalez/viz/TeamBlue_FinalProject/FinalProject2022?publish=yes)
 
 
 ### *Tools*
